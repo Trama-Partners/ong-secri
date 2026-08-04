@@ -1,0 +1,101 @@
+/* Comportamentos compartilhados do site SECRI.
+   Cada bloco só age se os elementos correspondentes existirem na página. */
+(function () {
+  'use strict';
+
+  // --- Menu mobile -----------------------------------------------------
+  var btn = document.getElementById('menuBtn');
+  var panel = document.getElementById('mobileNav');
+
+  if (btn && panel) {
+    var setOpen = function (open) {
+      panel.classList.toggle('hidden', !open);
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+      document.getElementById('iconOpen').classList.toggle('hidden', open);
+      document.getElementById('iconClose').classList.toggle('hidden', !open);
+    };
+
+    btn.addEventListener('click', function () {
+      setOpen(panel.classList.contains('hidden'));
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !panel.classList.contains('hidden')) {
+        setOpen(false);
+        btn.focus();
+      }
+    });
+
+    // Volta ao layout desktop com o painel fechado, evitando estado preso.
+    window.matchMedia('(min-width: 1024px)').addEventListener('change', function (e) {
+      if (e.matches) setOpen(false);
+    });
+  }
+
+  // --- Carrossel de depoimentos (Home) ---------------------------------
+  var quoteEl = document.getElementById('quoteText');
+
+  if (quoteEl) {
+    var testimonials = [
+      { quote: 'A SECRI foi o lugar onde aprendi que minha voz importa. Hoje ajudo outros jovens do bairro a acreditarem no mesmo.', name: 'Lucas, 19 anos', role: 'Programa Juventude' },
+      { quote: 'Meu filho encontrou na música um motivo para acordar cedo todos os dias. A mudança em casa foi enorme.', name: 'Márcia', role: 'Mãe de participante do Crer com as Mãos' },
+      { quote: 'Como voluntária, recebo muito mais do que ofereço. É impossível sair da SECRI sem o coração mais leve.', name: 'Renata', role: 'Voluntária há 3 anos' },
+    ];
+
+    var nameEl = document.getElementById('nameText');
+    var roleEl = document.getElementById('roleText');
+    var dotsEl = document.getElementById('dots');
+    var active = 0;
+
+    var render = function () {
+      var t = testimonials[active];
+      quoteEl.textContent = '"' + t.quote + '"';
+      nameEl.textContent = t.name;
+      roleEl.textContent = t.role;
+      dotsEl.innerHTML = '';
+
+      testimonials.forEach(function (item, idx) {
+        var d = document.createElement('button');
+        d.type = 'button';
+        d.className = 'h-2 rounded-full transition-all ' +
+          (idx === active ? 'w-6 bg-rose-500' : 'w-2 bg-ink-300 hover:bg-ink-400');
+        d.setAttribute('aria-label', 'Ver depoimento ' + (idx + 1));
+        d.setAttribute('aria-current', idx === active ? 'true' : 'false');
+        d.addEventListener('click', function () { active = idx; render(); });
+        dotsEl.appendChild(d);
+      });
+    };
+
+    document.getElementById('prevBtn').addEventListener('click', function () {
+      active = (active - 1 + testimonials.length) % testimonials.length;
+      render();
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', function () {
+      active = (active + 1) % testimonials.length;
+      render();
+    });
+
+    setInterval(function () {
+      active = (active + 1) % testimonials.length;
+      render();
+    }, 7000);
+
+    render();
+  }
+
+  // --- Formulários (confirmação local, sem backend) --------------------
+  [['volForm', 'volConfirm'], ['contactForm', 'contactConfirm']].forEach(function (pair) {
+    var form = document.getElementById(pair[0]);
+    var confirm = document.getElementById(pair[1]);
+    if (!form || !confirm) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      form.classList.add('hidden');
+      confirm.classList.remove('hidden');
+      confirm.focus();
+    });
+  });
+})();

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SECRI — Início</title>
+<meta name="description" content="A SECRI acompanha crianças, adolescentes e jovens de 4 a 24 anos em 10 bairros de Vitória/ES há 38 anos.">
+<link rel="icon" href="./assets/logo-secri.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="./assets/theme.js"></script>
+</head>
+<body class="bg-white font-sans text-ink-900 antialiased">
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-ink-900 focus:px-4 focus:py-2 focus:text-white">Pular para o conteúdo</a>
+<header class="sticky top-0 z-50 border-b border-ink-200 bg-white/95 backdrop-blur">
+  <div class="mx-auto max-w-7xl flex items-center justify-between gap-3 px-4 py-2.5 sm:px-6 sm:py-3 lg:px-8">
+    <a href="./index.html" class="flex-shrink-0">
+      <img src="./assets/logo-lockup.png" alt="SECRI — página inicial"
+           width="1308" height="712" class="h-11 w-auto sm:h-12 lg:h-14">
+    </a>
+
+    <nav class="hidden items-center gap-6 lg:flex" aria-label="Navegação principal">
+      <a href="./index.html" aria-current="page" class="border-b-2 pb-1 text-sm font-semibold transition-colors border-rose-500 text-rose-700">Início</a>
+      <a href="./quem-somos.html" class="border-b-2 pb-1 text-sm font-semibold transition-colors border-transparent text-ink-600 hover:border-rose-300 hover:text-ink-900">Quem Somos</a>
+      <a href="./programas.html" class="border-b-2 pb-1 text-sm font-semibold transition-colors border-transparent text-ink-600 hover:border-rose-300 hover:text-ink-900">Programas</a>
+      <a href="./impacto.html" class="border-b-2 pb-1 text-sm font-semibold transition-colors border-transparent text-ink-600 hover:border-rose-300 hover:text-ink-900">Impacto</a>
+      <a href="./noticias.html" class="border-b-2 pb-1 text-sm font-semibold transition-colors border-transparent text-ink-600 hover:border-rose-300 hover:text-ink-900">Notícias</a>
+      <a href="./transparencia.html" class="border-b-2 pb-1 text-sm font-semibold transition-colors border-transparent text-ink-600 hover:border-rose-300 hover:text-ink-900">Transparência</a>
+      <a href="./contato.html" class="border-b-2 pb-1 text-sm font-semibold transition-colors border-transparent text-ink-600 hover:border-rose-300 hover:text-ink-900">Contato</a>
+    </nav>
+
+    <a href="./como-ajudar.html" class="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900 bg-gold-500 text-ink-900 hover:bg-gold-300 hidden lg:inline-flex">Quero Ajudar</a>
+
+    <button id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileNav"
+            aria-label="Abrir menu"
+            class="-mr-1 inline-flex items-center justify-center rounded-lg p-2 text-ink-900 hover:bg-ink-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900 lg:hidden">
+      <svg id="iconOpen" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg id="iconClose" class="hidden h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+
+  <nav id="mobileNav" class="hidden border-t border-ink-200 bg-white lg:hidden" aria-label="Navegação principal (mobile)">
+    <div class="flex flex-col gap-1 px-4 py-4 sm:px-6">
+      <a href="./index.html" aria-current="page" class="rounded-lg px-3 py-2.5 text-base font-semibold bg-rose-50 text-rose-700">Início</a>
+      <a href="./quem-somos.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-ink-600 hover:bg-ink-50 hover:text-ink-900">Quem Somos</a>
+      <a href="./programas.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-ink-600 hover:bg-ink-50 hover:text-ink-900">Programas</a>
+      <a href="./impacto.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-ink-600 hover:bg-ink-50 hover:text-ink-900">Impacto</a>
+      <a href="./noticias.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-ink-600 hover:bg-ink-50 hover:text-ink-900">Notícias</a>
+      <a href="./transparencia.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-ink-600 hover:bg-ink-50 hover:text-ink-900">Transparência</a>
+      <a href="./contato.html" class="rounded-lg px-3 py-2.5 text-base font-semibold text-ink-600 hover:bg-ink-50 hover:text-ink-900">Contato</a>
+      <a href="./como-ajudar.html" class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900 sm:px-7 sm:text-base bg-gold-500 text-ink-900 hover:bg-gold-300 mt-3">Quero Ajudar</a>
+    </div>
+  </nav>
+</header>
+<main id="conteudo" class="overflow-x-hidden">
+
+  <section class="relative overflow-hidden bg-gradient-to-b from-rose-50 to-white px-4 py-14 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <div class="pointer-events-none absolute -right-24 -top-28 h-64 w-64 rounded-full bg-gold-300 opacity-40 blur-2xl sm:h-80 sm:w-80"></div>
+    <div class="pointer-events-none absolute -bottom-20 -left-16 h-48 w-48 rounded-full bg-sky-300 opacity-40 blur-2xl sm:h-56 sm:w-56"></div>
+    <div class="mx-auto max-w-7xl relative grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+      <div>
+        <span class="mb-5 inline-block rounded-full bg-rose-100 px-4 py-2 text-xs font-bold tracking-wide text-rose-700 sm:text-sm">38 ANOS DE ATUAÇÃO COMUNITÁRIA EM VITÓRIA/ES</span>
+        <h1 class="font-display text-3xl font-extrabold leading-tight tracking-tight text-ink-900 sm:text-4xl lg:text-5xl mb-5">Toda criança merece um lugar para crescer, aprender e sonhar.</h1>
+        <p class="text-base leading-relaxed text-ink-600 sm:text-lg mb-8 max-w-xl">A SECRI acompanha crianças, adolescentes e jovens de 4 a 24 anos em 10 bairros de Vitória/ES, despertando consciência crítica através da promoção humana.</p>
+        <div class="flex flex-col gap-3 sm:flex-row sm:gap-4">
+          <a href="./como-ajudar.html" class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900 sm:px-7 sm:text-base bg-gold-500 text-ink-900 hover:bg-gold-300">Quero Ajudar</a>
+          <a href="./programas.html" class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900 sm:px-7 sm:text-base border-2 border-ink-300 text-ink-900 hover:border-rose-500 hover:text-rose-700">Conheça os Programas</a>
+        </div>
+      </div>
+      <div class="h-64 overflow-hidden rounded-3xl sm:h-80 lg:h-[420px] lg:rounded-[42%_58%_65%_35%/45%_40%_60%_55%]">
+        <div class="flex h-full w-full items-center justify-center bg-ink-100 p-6"><span class="text-center font-mono text-xs text-ink-600">[ foto: crianças e jovens atendidos pela SECRI ]</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-y border-ink-200 bg-white px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+    <div class="mx-auto max-w-7xl grid grid-cols-2 gap-6 text-center lg:grid-cols-4">
+        <div class="flex flex-col justify-end">
+          <div class="font-display text-4xl sm:text-5xl font-extrabold text-gold-700">38</div>
+          <div class="mt-1.5 text-sm text-ink-600">anos de história</div>
+        </div>
+        <div class="flex flex-col justify-end">
+          <div class="font-display text-4xl sm:text-5xl font-extrabold text-sky-700">10</div>
+          <div class="mt-1.5 text-sm text-ink-600">bairros atendidos</div>
+        </div>
+        <div class="flex flex-col justify-end">
+          <div class="font-display text-4xl sm:text-5xl font-extrabold text-rose-700">4</div>
+          <div class="mt-1.5 text-sm text-ink-600">programas sociais</div>
+        </div>
+        <div class="flex flex-col justify-end">
+          <div class="font-display text-3xl sm:text-4xl font-extrabold text-ink-900">Centenas</div>
+          <div class="mt-1.5 text-sm text-ink-600">de famílias transformadas</div>
+        </div>
+    </div>
+  </section>
+
+  <section class="bg-ink-50 px-4 py-14 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <div class="mx-auto max-w-7xl">
+      <div class="mb-10 text-center sm:mb-12">
+        <h2 class="font-display text-2xl font-extrabold tracking-tight text-ink-900 sm:text-3xl mb-3">Nossos Programas</h2>
+        <p class="text-base leading-relaxed text-ink-600 sm:text-lg mx-auto max-w-xl">Quatro frentes de atuação que caminham juntas pela promoção humana.</p>
+      </div>
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <a href="./programa-pef.html" class="group flex flex-col rounded-2xl border-t-4 border-sky-500 bg-white p-6 shadow-sm ring-1 ring-ink-200 transition-transform hover:-translate-y-1 sm:p-7">
+          <span class="mb-4 h-10 w-10 rounded-full bg-sky-500 sm:h-11 sm:w-11"></span>
+          <h3 class="font-display text-lg font-bold text-ink-900 sm:text-xl mb-2">Estruturação Familiar</h3>
+          <p class="text-sm leading-relaxed text-ink-600 sm:text-base mb-4 flex-grow">Desenvolvimento humano, social e cidadania para fortalecer vínculos familiares.</p>
+          <span class="text-sm font-bold text-sky-700">Saiba mais &rarr;</span>
+        </a>
+        <a href="./programa-crer-com-as-maos.html" class="group flex flex-col rounded-2xl border-t-4 border-gold-500 bg-white p-6 shadow-sm ring-1 ring-ink-200 transition-transform hover:-translate-y-1 sm:p-7">
+          <span class="mb-4 h-10 w-10 rounded-full bg-gold-500 sm:h-11 sm:w-11"></span>
+          <h3 class="font-display text-lg font-bold text-ink-900 sm:text-xl mb-2">Crer com as Mãos</h3>
+          <p class="text-sm leading-relaxed text-ink-600 sm:text-base mb-4 flex-grow">Arte-educação e cidadania: canto coral, musicalização, percussão, artes, corpo e movimento, literatura.</p>
+          <span class="text-sm font-bold text-gold-700">Saiba mais &rarr;</span>
+        </a>
+        <a href="./programa-juventude.html" class="group flex flex-col rounded-2xl border-t-4 border-rose-500 bg-white p-6 shadow-sm ring-1 ring-ink-200 transition-transform hover:-translate-y-1 sm:p-7">
+          <span class="mb-4 h-10 w-10 rounded-full bg-rose-500 sm:h-11 sm:w-11"></span>
+          <h3 class="font-display text-lg font-bold text-ink-900 sm:text-xl mb-2">Juventude</h3>
+          <p class="text-sm leading-relaxed text-ink-600 sm:text-base mb-4 flex-grow">Qualificação profissional e protagonismo juvenil para jovens de 15 a 24 anos.</p>
+          <span class="text-sm font-bold text-rose-700">Saiba mais &rarr;</span>
+        </a>
+        <a href="./programa-ambulatorio.html" class="group flex flex-col rounded-2xl border-t-4 border-ink-500 bg-white p-6 shadow-sm ring-1 ring-ink-200 transition-transform hover:-translate-y-1 sm:p-7">
+          <span class="mb-4 h-10 w-10 rounded-full bg-ink-500 sm:h-11 sm:w-11"></span>
+          <h3 class="font-display text-lg font-bold text-ink-900 sm:text-xl mb-2">Ambulatório Santa Rita de Cássia</h3>
+          <p class="text-sm leading-relaxed text-ink-600 sm:text-base mb-4 flex-grow">Saúde e cidadania: atendimento ambulatorial aberto à comunidade.</p>
+          <span class="text-sm font-bold text-ink-700">Saiba mais &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white px-4 py-14 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <div class="mx-auto max-w-3xl text-center">
+      <h2 class="font-display text-2xl font-extrabold tracking-tight text-ink-900 sm:text-3xl mb-10">O que dizem sobre a SECRI</h2>
+      <div class="flex items-center gap-2 sm:gap-5">
+        <button id="prevBtn" type="button" aria-label="Depoimento anterior" class="flex-shrink-0 rounded-full p-2 text-2xl leading-none text-ink-400 hover:text-rose-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900">&lsaquo;</button>
+        <div class="flex-1" aria-live="polite">
+          <p id="quoteText" class="text-lg italic leading-relaxed text-ink-800 sm:text-xl"></p>
+          <p id="nameText" class="mt-5 font-display font-bold text-ink-900"></p>
+          <p id="roleText" class="text-sm text-ink-600"></p>
+        </div>
+        <button id="nextBtn" type="button" aria-label="Próximo depoimento" class="flex-shrink-0 rounded-full p-2 text-2xl leading-none text-ink-400 hover:text-rose-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900">&rsaquo;</button>
+      </div>
+      <div id="dots" class="mt-7 flex justify-center gap-2"></div>
+    </div>
+  </section>
+
+  <section class="bg-ink-50 px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+    <div class="mx-auto max-w-7xl text-center">
+      <h2 class="mb-8 font-display text-sm font-bold uppercase tracking-widest text-ink-600">Parceiros e Apoiadores</h2>
+      <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        <div class="flex h-20 items-center justify-center rounded-2xl border-2 border-dashed border-ink-300 bg-ink-50 p-4"><span class="text-center font-mono text-xs text-ink-600">logo parceiro</span></div>
+        <div class="flex h-20 items-center justify-center rounded-2xl border-2 border-dashed border-ink-300 bg-ink-50 p-4"><span class="text-center font-mono text-xs text-ink-600">logo parceiro</span></div>
+        <div class="flex h-20 items-center justify-center rounded-2xl border-2 border-dashed border-ink-300 bg-ink-50 p-4"><span class="text-center font-mono text-xs text-ink-600">logo parceiro</span></div>
+        <div class="flex h-20 items-center justify-center rounded-2xl border-2 border-dashed border-ink-300 bg-ink-50 p-4"><span class="text-center font-mono text-xs text-ink-600">logo parceiro</span></div>
+        <div class="flex h-20 items-center justify-center rounded-2xl border-2 border-dashed border-ink-300 bg-ink-50 p-4"><span class="text-center font-mono text-xs text-ink-600">logo parceiro</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-rose-500 px-4 py-14 sm:px-6 sm:py-20 lg:px-8 lg:py-24 text-center">
+    <div class="mx-auto max-w-2xl">
+      <h2 class="font-display text-2xl font-extrabold tracking-tight text-ink-900 sm:text-3xl mb-4">Sua doação transforma vidas</h2>
+      <p class="mb-8 text-base leading-relaxed text-ink-900 sm:text-lg">Com o apoio de pessoas como você, seguimos transformando a vida de crianças, adolescentes e jovens há 38 anos.</p>
+      <div class="flex flex-col justify-center gap-3 sm:flex-row sm:gap-4">
+        <a href="./como-ajudar.html#doacao-financeira" class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900 sm:px-7 sm:text-base bg-ink-900 text-white hover:bg-ink-800">Doar Agora</a>
+        <a href="./como-ajudar.html#voluntariado" class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900 sm:px-7 sm:text-base border-2 border-ink-900 text-ink-900 hover:bg-rose-300">Quero ser voluntário</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="bg-ink-900 px-4 pb-8 pt-14 text-ink-200 sm:px-6 sm:pt-16 lg:px-8">
+  <div class="mx-auto max-w-7xl grid gap-10 border-b border-ink-800 pb-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+    <div class="sm:col-span-2 lg:col-span-1">
+      <img src="./assets/logo-secri-light.png" alt="SECRI — Serviço de Engajamento Comunitário"
+           width="1308" height="783" class="mb-5 h-auto w-56">
+      <p class="mb-4 max-w-xs text-sm leading-relaxed text-ink-200">Serviço de Engajamento Comunitário. Promovendo desenvolvimento humano e cidadania em Vitória/ES desde 1988.</p>
+      <a href="https://instagram.com/ong_secri" target="_blank" rel="noopener" class="text-sm font-semibold text-white hover:text-gold-500">@ong_secri no Instagram</a>
+    </div>
+    <div>
+      <h2 class="mb-4 font-display text-xs font-bold uppercase tracking-widest text-ink-400">Institucional</h2>
+      <ul class="flex flex-col gap-3 text-sm">
+        <li><a href="./quem-somos.html" class="text-white hover:text-gold-500">Quem Somos</a></li>
+        <li><a href="./programas.html" class="text-white hover:text-gold-500">Programas</a></li>
+        <li><a href="./transparencia.html" class="text-white hover:text-gold-500">Transparência</a></li>
+        <li><a href="./noticias.html" class="text-white hover:text-gold-500">Notícias</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="mb-4 font-display text-xs font-bold uppercase tracking-widest text-ink-400">Ajude</h2>
+      <ul class="flex flex-col gap-3 text-sm">
+        <li><a href="./como-ajudar.html#doacao-financeira" class="text-white hover:text-gold-500">Doar Agora</a></li>
+        <li><a href="./como-ajudar.html#voluntariado" class="text-white hover:text-gold-500">Seja Voluntário</a></li>
+        <li><a href="./como-ajudar.html#empresas-parceiras" class="text-white hover:text-gold-500">Empresas Parceiras</a></li>
+        <li><a href="./impacto.html" class="text-white hover:text-gold-500">Nosso Impacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="mb-4 font-display text-xs font-bold uppercase tracking-widest text-ink-400">Contato</h2>
+      <ul class="flex flex-col gap-2.5 text-sm">
+        <li>Rua Tenente Setúbal, 395 — São Benedito, Vitória/ES</li>
+        <li><a href="tel:+552732150942" class="text-white hover:text-gold-500">(27) 3215-0942</a></li>
+        <li><a href="tel:+552732253126" class="text-white hover:text-gold-500">(27) 3225-3126</a></li>
+        <li><a href="mailto:contato@secri.org.br" class="text-white hover:text-gold-500">contato@secri.org.br</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mx-auto max-w-7xl flex flex-col gap-3 pt-6 text-xs text-ink-400 sm:flex-row sm:items-center sm:justify-between">
+    <span>© 2026 SECRI — Serviço de Engajamento Comunitário. Todos os direitos reservados.</span>
+    <div class="flex gap-5">
+      <a href="./politica-privacidade.html" class="hover:text-white">Política de Privacidade</a>
+      <a href="./transparencia.html#estatuto" class="hover:text-white">Estatuto Social</a>
+    </div>
+  </div>
+</footer>
+<script src="./assets/site.js"></script>
+</body>
+</html>

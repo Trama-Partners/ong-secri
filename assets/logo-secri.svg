@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 652 692" fill="none" role="img" aria-label="SECRI">
+  <title>SECRI</title>
+  <g stroke="currentColor" stroke-width="20" stroke-linecap="round">
+    <path d="M290.9 251.9L301.6 137.2 M188.0 330.0L132.9 320.0 M312.0 437.7L347.1 543.8 M377.3 353.1L532.1 363.1 M232.7 428.8L190.1 499.3"/>
+    <circle cx="282" cy="347" r="85.5"/>
+    <circle cx="592" cy="367" r="50"/>
+    <circle cx="162" cy="546" r="44.5"/>
+    <circle cx="308" cy="69" r="58.5" fill="#F2C438"/>
+    <circle cx="67" cy="308" r="57" fill="#D97791"/>
+    <circle cx="371" cy="616" r="66" fill="#84A9D9"/>
+  </g>
+  <circle cx="282" cy="347" r="28" fill="currentColor"/>
+</svg>
