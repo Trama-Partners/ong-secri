@@ -1,0 +1,29 @@
+<a href="#conteudo" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-ink-900 focus:px-4 focus:py-2 focus:text-white">Pular para o conteúdo</a>
+<header class="sticky top-0 z-50 border-b border-ink-200 bg-white/95 backdrop-blur">
+  <div class="mx-auto max-w-7xl flex items-center justify-between gap-3 px-4 py-2.5 sm:px-6 sm:py-3 lg:px-8">
+    <a href="{{BASE}}index.html" class="flex-shrink-0">
+      <img src="{{BASE}}assets/logo-lockup.png" alt="SECRI - página inicial"
+           width="1308" height="712" fetchpriority="high" decoding="async" class="h-11 w-auto sm:h-12 lg:h-14">
+    </a>
+
+    <nav class="hidden items-center gap-6 lg:flex" aria-label="Navegação principal">
+{{NAV_DESKTOP}}
+    </nav>
+
+    <a href="{{BASE}}como-ajudar.html" class="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900 bg-gold-500 text-ink-900 hover:bg-gold-300 hidden lg:inline-flex">Quero Ajudar</a>
+
+    <button id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileNav"
+            aria-label="Abrir menu"
+            class="-mr-1 inline-flex items-center justify-center rounded-lg p-2 text-ink-900 hover:bg-ink-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900 lg:hidden">
+      <svg id="iconOpen" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg id="iconClose" class="hidden h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+
+  <nav id="mobileNav" class="hidden border-t border-ink-200 bg-white lg:hidden" aria-label="Navegação principal (mobile)">
+    <div class="flex flex-col gap-1 px-4 py-4 sm:px-6">
+{{NAV_MOBILE}}
+      <a href="{{BASE}}como-ajudar.html" class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-bold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900 sm:px-7 sm:text-base bg-gold-500 text-ink-900 hover:bg-gold-300 mt-3">Quero Ajudar</a>
+    </div>
+  </nav>
+</header>

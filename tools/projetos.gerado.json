@@ -1,0 +1,47 @@
+{
+  "projetos/canoa-viva.html": {
+    "nav": "projetos",
+    "title": "Canoa Viva | Canoagem gratuita para adolescentes em Vitória",
+    "description": "Projeto gratuito de canoagem havaiana para adolescentes do Território do Bem, na Praia da Guarderia, em Vitória/ES. Parceria com o Instituto Maratonas."
+  },
+  "projetos/engajando-futuros.html": {
+    "nav": "projetos",
+    "title": "Engajando Futuros | Grupo para adolescentes em Vitória ES",
+    "description": "Grupo gratuito para adolescentes do Território do Bem, em Vitória/ES: cidadania, convivência e preparação para o mundo do trabalho."
+  },
+  "projetos/inova-bem.html": {
+    "nav": "projetos",
+    "title": "Inova Bem | Reforço escolar gratuito em Vitória ES | SECRI",
+    "description": "Aulas gratuitas e personalizadas de Português, Matemática e Inglês para crianças e adolescentes do Território do Bem, em Vitória/ES. Parceria com Luma."
+  },
+  "projetos/judo.html": {
+    "nav": "projetos",
+    "title": "Judô | Aulas gratuitas para crianças em Vitória | SECRI",
+    "description": "Aulas gratuitas de judô para crianças e adolescentes do Território do Bem, em Vitória/ES. Disciplina e respeito no tatame do SECRI."
+  },
+  "projetos/movimento-com-qualidade-de-vida.html": {
+    "nav": "projetos",
+    "title": "Movimento com Qualidade de Vida | Atividades 50+ em Vitória",
+    "description": "Encontros semanais gratuitos para pessoas com mais de 50 anos no Território do Bem, em Vitória/ES: atividade física, artesanato e convivência no SECRI."
+  },
+  "projetos/o-som-do-bem.html": {
+    "nav": "projetos",
+    "title": "O Som do Bem | Aulas de flauta gratuitas em Vitória | SECRI",
+    "description": "Projeto gratuito de música do SECRI ensina flauta a 30 crianças e adolescentes do Território do Bem, em Vitória/ES. Patrocínio ArcelorMittal Tubarão."
+  },
+  "projetos/oficina-de-canto.html": {
+    "nav": "projetos",
+    "title": "Oficina de Canto | Coral infantil gratuito em Vitória ES",
+    "description": "Oficina gratuita de canto coral para crianças de 6 a 12 anos do Território do Bem, em Vitória/ES, com apresentações públicas. Parceria com a SETADES."
+  },
+  "projetos/travessia.html": {
+    "nav": "projetos",
+    "title": "Travessia | Ballet clássico gratuito em Vitória ES | SECRI",
+    "description": "Aulas gratuitas de ballet clássico para crianças de 7 a 12 anos do Território do Bem, em Vitória/ES, na Academia Duetto."
+  },
+  "projetos.html": {
+    "nav": "projetos",
+    "title": "Projetos | ONG para crianças em Vitória ES | SECRI",
+    "description": "Música, esporte, dança, reforço escolar e convivência: 8 projetos gratuitos do SECRI para crianças e adolescentes do Território do Bem, em Vitória/ES."
+  }
+}

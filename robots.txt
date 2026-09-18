@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# páginas internas de revisão, fora do índice
+Disallow: /pendencias.html
+Disallow: /styleguide.html
+
+Sitemap: https://secri.org.br/sitemap.xml

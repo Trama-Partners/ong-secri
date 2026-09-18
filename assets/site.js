@@ -37,10 +37,14 @@
   var quoteEl = document.getElementById('quoteText');
 
   if (quoteEl) {
+    // ATENÇÃO: depoimentos ILUSTRATIVOS, escritos para a versão de validação.
+    // As pessoas citadas NÃO existem. Substituir por falas reais coletadas com
+    // participantes e famílias antes de o site ir ao ar. A seção na home exibe
+    // um selo avisando que são exemplos — não remover esse selo antes da troca.
     var testimonials = [
-      { quote: 'A SECRI foi o lugar onde aprendi que minha voz importa. Hoje ajudo outros jovens do bairro a acreditarem no mesmo.', name: 'Lucas, 19 anos', role: 'Programa Juventude' },
-      { quote: 'Meu filho encontrou na música um motivo para acordar cedo todos os dias. A mudança em casa foi enorme.', name: 'Márcia', role: 'Mãe de participante do Crer com as Mãos' },
-      { quote: 'Como voluntária, recebo muito mais do que ofereço. É impossível sair da SECRI sem o coração mais leve.', name: 'Renata', role: 'Voluntária há 3 anos' },
+      { quote: 'O SECRI foi o lugar onde aprendi que minha voz importa. Hoje ajudo outros jovens do bairro a acreditarem no mesmo.', name: 'Depoimento ilustrativo', role: 'Exemplo de fala de adolescente atendido' },
+      { quote: 'Meu filho encontrou na música um motivo para acordar cedo todos os dias. A mudança em casa foi enorme.', name: 'Depoimento ilustrativo', role: 'Exemplo de fala de mãe de participante' },
+      { quote: 'Como voluntária, recebo muito mais do que ofereço. É impossível sair do SECRI sem o coração mais leve.', name: 'Depoimento ilustrativo', role: 'Exemplo de fala de voluntária' },
     ];
 
     var nameEl = document.getElementById('nameText');
