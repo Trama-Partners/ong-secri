@@ -79,7 +79,6 @@ Disallow: /styleguide.html
 User-agent: GPTBot
 Allow: /
 Disallow: /assets/fotos/
-Disallow: /assets/og/
 Disallow: /404.html
 Disallow: /pendencias.html
 Disallow: /styleguide.html
@@ -87,7 +86,6 @@ Disallow: /styleguide.html
 User-agent: ClaudeBot
 Allow: /
 Disallow: /assets/fotos/
-Disallow: /assets/og/
 Disallow: /404.html
 Disallow: /pendencias.html
 Disallow: /styleguide.html
@@ -95,7 +93,6 @@ Disallow: /styleguide.html
 User-agent: Google-Extended
 Allow: /
 Disallow: /assets/fotos/
-Disallow: /assets/og/
 Disallow: /404.html
 Disallow: /pendencias.html
 Disallow: /styleguide.html
@@ -103,7 +100,6 @@ Disallow: /styleguide.html
 User-agent: CCBot
 Allow: /
 Disallow: /assets/fotos/
-Disallow: /assets/og/
 Disallow: /404.html
 Disallow: /pendencias.html
 Disallow: /styleguide.html
@@ -111,7 +107,6 @@ Disallow: /styleguide.html
 User-agent: Bytespider
 Allow: /
 Disallow: /assets/fotos/
-Disallow: /assets/og/
 Disallow: /404.html
 Disallow: /pendencias.html
 Disallow: /styleguide.html
@@ -119,7 +114,6 @@ Disallow: /styleguide.html
 User-agent: Meta-ExternalAgent
 Allow: /
 Disallow: /assets/fotos/
-Disallow: /assets/og/
 Disallow: /404.html
 Disallow: /pendencias.html
 Disallow: /styleguide.html
@@ -127,7 +121,6 @@ Disallow: /styleguide.html
 User-agent: Applebot-Extended
 Allow: /
 Disallow: /assets/fotos/
-Disallow: /assets/og/
 Disallow: /404.html
 Disallow: /pendencias.html
 Disallow: /styleguide.html
@@ -135,7 +128,6 @@ Disallow: /styleguide.html
 User-agent: Amazonbot
 Allow: /
 Disallow: /assets/fotos/
-Disallow: /assets/og/
 Disallow: /404.html
 Disallow: /pendencias.html
 Disallow: /styleguide.html
@@ -143,7 +135,6 @@ Disallow: /styleguide.html
 User-agent: Diffbot
 Allow: /
 Disallow: /assets/fotos/
-Disallow: /assets/og/
 Disallow: /404.html
 Disallow: /pendencias.html
 Disallow: /styleguide.html
@@ -151,7 +142,6 @@ Disallow: /styleguide.html
 User-agent: omgili
 Allow: /
 Disallow: /assets/fotos/
-Disallow: /assets/og/
 Disallow: /404.html
 Disallow: /pendencias.html
 Disallow: /styleguide.html
@@ -159,7 +149,6 @@ Disallow: /styleguide.html
 User-agent: FacebookBot
 Allow: /
 Disallow: /assets/fotos/
-Disallow: /assets/og/
 Disallow: /404.html
 Disallow: /pendencias.html
 Disallow: /styleguide.html
@@ -167,7 +156,6 @@ Disallow: /styleguide.html
 User-agent: cohere-ai
 Allow: /
 Disallow: /assets/fotos/
-Disallow: /assets/og/
 Disallow: /404.html
 Disallow: /pendencias.html
 Disallow: /styleguide.html
@@ -175,7 +163,6 @@ Disallow: /styleguide.html
 User-agent: Timpibot
 Allow: /
 Disallow: /assets/fotos/
-Disallow: /assets/og/
 Disallow: /404.html
 Disallow: /pendencias.html
 Disallow: /styleguide.html

@@ -110,6 +110,10 @@ def main() -> int:
     # Aqui o texto institucional é liberado para os dois, mas /assets/fotos/
     # fica fora do treino: são 64 fotos com crianças identificáveis e o termo
     # de autorização de uso de imagem ainda não foi confirmado pelo SECRI.
+    #
+    # /assets/og/ NÃO entra nesse bloqueio. São as imagens de compartilhamento,
+    # que existem para ser buscadas por crawler de rede social. Bloqueá-las
+    # quebra o preview no WhatsApp, Facebook e LinkedIn.
     TREINO = ['GPTBot', 'ClaudeBot', 'Google-Extended', 'CCBot', 'Bytespider',
               'Meta-ExternalAgent', 'Applebot-Extended', 'Amazonbot',
               'Diffbot', 'omgili', 'FacebookBot', 'cohere-ai', 'Timpibot']
@@ -129,7 +133,7 @@ def main() -> int:
                   '# As fotos mostram crianças identificáveis e a autorização de uso de\n'
                   '# imagem ainda está pendente. Conteúdo em base de treino não se retira.\n'
                   + ''.join(f'User-agent: {b}\nAllow: /\nDisallow: /assets/fotos/\n'
-                            f'Disallow: /assets/og/\n{internas}\n' for b in TREINO))
+                            f'{internas}\n' for b in TREINO))
 
     blocos.append(f'Sitemap: {base}/sitemap.xml\n')
 
