@@ -18,18 +18,21 @@ conteúdo, rode a cadeia de SEO antes de encerrar.**
 | Renomeou arquivo ou mudou URL | Atualizar `site.json` · rodar os dois scripts · conferir se algum link interno quebrou |
 | Trocou ou adicionou foto | `gerar_seo.py` (o sitemap de imagens lê o HTML) · conferir `alt` · se for foto de abertura, regerar o `og:image` |
 | Mudou nome, telefone, CNPJ ou endereço | `tools/partials/footer.html` e `site.json` · conferir o JSON-LD, que repete esses dados |
-| Editou markdown de projeto | `gerar_projetos.py` · `sync_chrome.py --apply` · `gerar_seo.py` |
+| Editou markdown de projeto | `gerar_projetos.py` · `sync_chrome.py --apply` · `gerar_seo.py` · `gerar_llms.py` |
+| Qualquer alteração de texto publicado | `gerar_llms.py` — o `llms-full.txt` é cópia do conteúdo e desatualiza calado |
 
 **Cadeia completa, na ordem:**
 
 ```bash
-python3 tools/gerar_projetos.py     # páginas de projeto + listagem
-python3 tools/sync_chrome.py --apply # head, header, footer, meta tags, JSON-LD
-python3 tools/gerar_seo.py           # sitemap.xml + robots.txt
+python3 tools/gerar_projetos.py      # páginas de projeto + listagem
+python3 tools/sync_chrome.py --apply  # head, header, footer, meta tags, JSON-LD
+python3 tools/gerar_seo.py            # sitemap.xml + robots.txt
+python3 tools/gerar_llms.py           # llms.txt + llms-full.txt
 ```
 
-Rodar fora de ordem não quebra nada, mas `gerar_seo.py` lê o HTML final — então
-ele vem por último, senão o sitemap sai defasado.
+Rodar fora de ordem não quebra nada, mas `gerar_seo.py` e `gerar_llms.py` leem o
+HTML final — então vêm por último, senão o sitemap e o conteúdo para IA saem
+defasados.
 
 ---
 
@@ -64,6 +67,37 @@ card cortar no lugar errado.
 
 ---
 
+## Indexação por sistemas de IA
+
+Buscador tradicional rastreia HTML; assistente de IA trabalha melhor com
+markdown limpo. Sem isso a IA precisa interpretar marcação Tailwind e costuma
+resumir errado.
+
+**Arquivos na raiz, gerados por `tools/gerar_llms.py`:**
+
+- `llms.txt` — índice: resumo da instituição, números de 2025, uma linha por
+  página com descrição, dados de contato e um aviso de que a versão está em
+  validação (para a IA não citar como fato o que está "a confirmar")
+- `llms-full.txt` — texto integral das 17 páginas em um arquivo, ~50 KB, com
+  comentário `<!-- fonte: URL -->` antes de cada uma para a IA saber citar
+
+**Política de crawlers no `robots.txt`**, definida em `tools/gerar_seo.py`:
+
+| Grupo | Bots | Regra |
+|---|---|---|
+| Resposta | OAI-SearchBot, ChatGPT-User, Claude-User, Claude-SearchBot, PerplexityBot, Perplexity-User, Gemini-Deep-Research, DuckAssistBot, MistralAI-User, YouBot | liberado |
+| Treinamento | GPTBot, ClaudeBot, Google-Extended, CCBot, Bytespider, Meta-ExternalAgent, Applebot-Extended, Amazonbot, Diffbot, omgili, FacebookBot, cohere-ai, Timpibot | texto liberado, `/assets/fotos/` e `/assets/og/` bloqueados |
+
+O bloqueio das fotos para treino é decisão de proteção: são 64 imagens com
+crianças identificáveis e a autorização de uso de imagem segue pendente.
+Conteúdo absorvido por base de treino não se retira depois. **Ao revisar essa
+política, confirme antes se o termo de autorização foi assinado.**
+
+Os bots de resposta continuam liberados, então o SECRI segue sendo encontrado e
+citado pelas IAs — que é o que traz gente ao site.
+
+---
+
 ## Estratégia de conteúdo
 
 O site disputa **busca local**, não termo genérico. Uma ONG de bairro não vence
@@ -91,6 +125,7 @@ tools/
 ├── sync_chrome.py       escreve o chrome nas 19 páginas
 ├── gerar_projetos.py    gera projetos/*.html e projetos.html dos markdowns
 ├── gerar_seo.py         gera sitemap.xml e robots.txt
+├── gerar_llms.py        gera llms.txt e llms-full.txt
 ├── trocar_main.py       troca o <main> de uma página
 └── md.py                conversor Markdown→HTML mínimo
 ```

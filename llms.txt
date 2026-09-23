@@ -1,0 +1,54 @@
+# SECRI - Serviço de Engajamento Comunitário
+
+> ONG fundada em 13 de setembro de 1988 por mães trabalhadoras do bairro São Benedito, em Vitória, Espírito Santo, Brasil. Atende gratuitamente crianças e adolescentes de 6 a 17 anos no Território do Bem, região formada por 6 bairros e 3 comunidades no alto da cidade. Mantém 8 projetos de música, esporte, dança, reforço escolar e convivência, além de um programa para pessoas com mais de 50 anos. CNPJ 31.795.321/0001-53.
+
+Em 2025 o SECRI serviu 7.041 refeições, atendeu 94 crianças e adolescentes, acompanhou 68 famílias e manteve 28 parcerias institucionais.
+
+## Institucional
+
+- [Início](https://secri.org.br/): Há 38 anos no Território do Bem, em Vitória/ES. Oito projetos gratuitos de música, esporte, dança e reforço escolar para crianças e adolescentes.
+- [Quem Somos](https://secri.org.br/quem-somos.html): De um grupo de mães trabalhadoras em 1988 a uma referência em promoção humana no Território do Bem, em Vitória/ES. Conheça a história do SECRI.
+- [Nosso Impacto](https://secri.org.br/impacto.html): Em 2025: 7.041 refeições servidas, 94 crianças e adolescentes atendidos, 68 famílias acompanhadas e 28 parcerias no Território do Bem, em Vitória/ES.
+- [Transparência](https://secri.org.br/transparencia.html): Estatuto, atas, balanços e relatórios anuais de atividades do SECRI disponíveis para download. Prestação de contas aberta à sociedade.
+
+## Projetos
+
+- [Projetos](https://secri.org.br/projetos.html): Música, esporte, dança, reforço escolar e convivência: 8 projetos gratuitos do SECRI para crianças e adolescentes do Território do Bem, em Vitória/ES.
+- [Canoa Viva](https://secri.org.br/projetos/canoa-viva.html): Projeto gratuito de canoagem havaiana para adolescentes do Território do Bem, na Praia da Guarderia, em Vitória/ES. Parceria com o Instituto Maratonas.
+- [Engajando Futuros](https://secri.org.br/projetos/engajando-futuros.html): Grupo gratuito para adolescentes do Território do Bem, em Vitória/ES: cidadania, convivência e preparação para o mundo do trabalho.
+- [Inova Bem](https://secri.org.br/projetos/inova-bem.html): Aulas gratuitas e personalizadas de Português, Matemática e Inglês para crianças e adolescentes do Território do Bem, em Vitória/ES. Parceria com Luma.
+- [Judô](https://secri.org.br/projetos/judo.html): Aulas gratuitas de judô para crianças e adolescentes do Território do Bem, em Vitória/ES. Disciplina e respeito no tatame do SECRI.
+- [Movimento com Qualidade de Vida](https://secri.org.br/projetos/movimento-com-qualidade-de-vida.html): Encontros semanais gratuitos para pessoas com mais de 50 anos no Território do Bem, em Vitória/ES: atividade física, artesanato e convivência no SECRI.
+- [O Som do Bem](https://secri.org.br/projetos/o-som-do-bem.html): Projeto gratuito de música do SECRI ensina flauta a 30 crianças e adolescentes do Território do Bem, em Vitória/ES. Patrocínio ArcelorMittal Tubarão.
+- [Oficina de Canto](https://secri.org.br/projetos/oficina-de-canto.html): Oficina gratuita de canto coral para crianças de 6 a 12 anos do Território do Bem, em Vitória/ES, com apresentações públicas. Parceria com a SETADES.
+- [Travessia](https://secri.org.br/projetos/travessia.html): Aulas gratuitas de ballet clássico para crianças de 7 a 12 anos do Território do Bem, em Vitória/ES, na Academia Duetto.
+
+## Participação
+
+- [Como Ajudar](https://secri.org.br/como-ajudar.html): Doe por Pix ou transferência, destine sua Nota Premiada Capixaba, seja voluntário ou torne sua empresa parceira do SECRI, em Vitória/ES.
+- [Contato](https://secri.org.br/contato.html): Fale com o SECRI: Rua Tenente Setúbal, 395, São Benedito, Vitória/ES. WhatsApp (27) 99849-9507, telefone (27) 3215-0942 e contato@secri.org.br.
+- [Notícias](https://secri.org.br/noticias.html): Recital de Flauta, Espetáculo Ballerina, Mostra Cultural e Noite Natalina: acompanhe os acontecimentos e as aparições do SECRI na imprensa.
+
+## Políticas
+
+- [Política de Privacidade](https://secri.org.br/politica-privacidade.html): Como o SECRI coleta, usa e protege os dados pessoais enviados por este site, em conformidade com a Lei Geral de Proteção de Dados (Lei 13.709/2018).
+
+## Contato
+
+- Endereço: Rua Tenente Setúbal, 395, São Benedito, Vitória/ES, CEP 29047-850
+- WhatsApp e telefone: (27) 99849-9507
+- Telefone fixo: (27) 3215-0942
+- E-mail: contato@secri.org.br
+- E-mail para parcerias e doações de empresas: financeiro@secri.org.br
+- Instagram: https://instagram.com/ong_secri
+- Pix (CNPJ): 31.795.321/0001-53
+- Conta bancária: SICOOB 756, agência 3010, conta corrente 56729-9
+
+## Observação sobre esta versão
+
+O site está em fase de validação com a instituição. Trechos marcados como "a confirmar" ainda não foram verificados e não devem ser citados como fato. Os depoimentos publicados são ilustrativos e não correspondem a pessoas reais.
+
+## Outros formatos
+
+- [Conteúdo integral em markdown](https://secri.org.br/llms-full.txt)
+- [Sitemap XML](https://secri.org.br/sitemap.xml)

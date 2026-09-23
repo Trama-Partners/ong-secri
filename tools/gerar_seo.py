@@ -100,13 +100,41 @@ def main() -> int:
                  '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
                  + '\n'.join(entradas) + '\n</urlset>\n')
 
+    internas = ''.join(f'Disallow: /{p}\n' for p in sorted(FORA))
+
+    # Crawlers de IA se dividem em dois papéis. Os de RESPOSTA buscam a página
+    # na hora em que alguém pergunta e citam a fonte, o que traz gente ao site.
+    # Os de TREINO copiam o conteúdo para dentro do modelo, de forma
+    # irreversível.
+    #
+    # Aqui o texto institucional é liberado para os dois, mas /assets/fotos/
+    # fica fora do treino: são 64 fotos com crianças identificáveis e o termo
+    # de autorização de uso de imagem ainda não foi confirmado pelo SECRI.
+    TREINO = ['GPTBot', 'ClaudeBot', 'Google-Extended', 'CCBot', 'Bytespider',
+              'Meta-ExternalAgent', 'Applebot-Extended', 'Amazonbot',
+              'Diffbot', 'omgili', 'FacebookBot', 'cohere-ai', 'Timpibot']
+    RESPOSTA = ['OAI-SearchBot', 'ChatGPT-User', 'Claude-User', 'Claude-SearchBot',
+                'PerplexityBot', 'Perplexity-User', 'Gemini-Deep-Research',
+                'DuckAssistBot', 'MistralAI-User', 'YouBot']
+
+    blocos = [f'User-agent: *\nAllow: /\n\n'
+              f'# páginas internas de revisão, fora do índice\n{internas}'
+              f'\n# arquivos de trabalho, não são conteúdo do site\nDisallow: /tools/\n']
+
+    blocos.append('\n# Buscadores de IA que respondem citando a fonte: liberados.\n'
+                  '# São eles que levam pessoas ao site.\n'
+                  + ''.join(f'User-agent: {b}\nAllow: /\n{internas}\n' for b in RESPOSTA))
+
+    blocos.append('# Coletores para treinamento de modelo: texto liberado, fotos bloqueadas.\n'
+                  '# As fotos mostram crianças identificáveis e a autorização de uso de\n'
+                  '# imagem ainda está pendente. Conteúdo em base de treino não se retira.\n'
+                  + ''.join(f'User-agent: {b}\nAllow: /\nDisallow: /assets/fotos/\n'
+                            f'Disallow: /assets/og/\n{internas}\n' for b in TREINO))
+
+    blocos.append(f'Sitemap: {base}/sitemap.xml\n')
+
     with open(os.path.join(RAIZ, 'robots.txt'), 'w', encoding='utf-8') as fh:
-        fh.write('User-agent: *\nAllow: /\n\n'
-                 '# páginas internas de revisão, fora do índice\n'
-                 + ''.join(f'Disallow: /{p}\n' for p in sorted(FORA))
-                 + '\n# arquivos de trabalho, não são conteúdo do site\n'
-                   'Disallow: /tools/\n\n'
-                 f'Sitemap: {base}/sitemap.xml\n')
+        fh.write('\n'.join(blocos))
 
     print(f'sitemap.xml: {len(entradas)} URLs · {total_img} imagens')
     print('robots.txt atualizado')
