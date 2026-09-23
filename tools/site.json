@@ -55,117 +55,182 @@
       "nav": "inicio",
       "title": "SECRI | ONG para crianças e adolescentes em Vitória ES",
       "description": "Há 38 anos no Território do Bem, em Vitória/ES. Oito projetos gratuitos de música, esporte, dança e reforço escolar para crianças e adolescentes.",
-      "og_image": "assets/fotos/canoa-viva/canoa-02.webp"
+      "og_image": "assets/og/og-canoa-02.webp",
+      "og_image_w": 1200,
+      "og_image_h": 630,
+      "schema": "WebPage",
+      "breadcrumb": "Início"
     },
     "quem-somos.html": {
       "nav": "quem-somos",
       "title": "Quem Somos | 38 anos de história | SECRI Vitória ES",
       "description": "De um grupo de mães trabalhadoras em 1988 a uma referência em promoção humana no Território do Bem, em Vitória/ES. Conheça a história do SECRI.",
-      "og_image": "assets/fotos/institucional/institucional-02.webp",
-      "og_image_alt": "Menina lendo no mirante da sede do SECRI, com o Território do Bem ao fundo"
+      "og_image": "assets/og/og-institucional-02.webp",
+      "og_image_alt": "Menina lendo no mirante da sede do SECRI, com o Território do Bem ao fundo",
+      "og_image_w": 1200,
+      "og_image_h": 630,
+      "schema": "AboutPage",
+      "breadcrumb": "Quem Somos"
     },
     "impacto.html": {
       "nav": "impacto",
       "title": "Nosso Impacto | Números e resultados | SECRI Vitória ES",
-      "description": "Em 2025: 7.041 refeições servidas, 94 crianças e adolescentes atendidos, 68 famílias acompanhadas e 28 parcerias no Território do Bem, em Vitória/ES."
+      "description": "Em 2025: 7.041 refeições servidas, 94 crianças e adolescentes atendidos, 68 famílias acompanhadas e 28 parcerias no Território do Bem, em Vitória/ES.",
+      "og_image_w": 1200,
+      "og_image_h": 630,
+      "schema": "WebPage",
+      "breadcrumb": "Nosso Impacto",
+      "og_image": "assets/og/og-canoa-02.webp"
     },
     "noticias.html": {
       "nav": "noticias",
       "title": "Notícias | Eventos e mídia | SECRI Vitória ES",
-      "description": "Recital de Flauta, Espetáculo Ballerina, Mostra Cultural e Noite Natalina: acompanhe os acontecimentos e as aparições do SECRI na imprensa."
+      "description": "Recital de Flauta, Espetáculo Ballerina, Mostra Cultural e Noite Natalina: acompanhe os acontecimentos e as aparições do SECRI na imprensa.",
+      "og_image_w": 1200,
+      "og_image_h": 630,
+      "schema": "CollectionPage",
+      "breadcrumb": "Notícias",
+      "og_image": "assets/og/og-canoa-02.webp"
     },
     "transparencia.html": {
       "nav": "transparencia",
       "title": "Transparência | Relatórios e balanços | SECRI Vitória ES",
-      "description": "Estatuto, atas, balanços e relatórios anuais de atividades do SECRI disponíveis para download. Prestação de contas aberta à sociedade."
+      "description": "Estatuto, atas, balanços e relatórios anuais de atividades do SECRI disponíveis para download. Prestação de contas aberta à sociedade.",
+      "og_image_w": 1200,
+      "og_image_h": 630,
+      "schema": "WebPage",
+      "breadcrumb": "Transparência",
+      "og_image": "assets/og/og-canoa-02.webp"
     },
     "contato.html": {
       "nav": "contato",
       "title": "Contato | SECRI - Serviço de Engajamento Comunitário",
-      "description": "Fale com o SECRI: Rua Tenente Setúbal, 395, São Benedito, Vitória/ES. WhatsApp (27) 99849-9507, telefone (27) 3215-0942 e contato@secri.org.br."
+      "description": "Fale com o SECRI: Rua Tenente Setúbal, 395, São Benedito, Vitória/ES. WhatsApp (27) 99849-9507, telefone (27) 3215-0942 e contato@secri.org.br.",
+      "og_image_w": 1200,
+      "og_image_h": 630,
+      "schema": "ContactPage",
+      "breadcrumb": "Contato",
+      "og_image": "assets/og/og-canoa-02.webp"
     },
     "como-ajudar.html": {
       "nav": null,
       "title": "Como Ajudar | Doe para o SECRI em Vitória ES",
-      "description": "Doe por Pix ou transferência, destine sua Nota Premiada Capixaba, seja voluntário ou torne sua empresa parceira do SECRI, em Vitória/ES."
+      "description": "Doe por Pix ou transferência, destine sua Nota Premiada Capixaba, seja voluntário ou torne sua empresa parceira do SECRI, em Vitória/ES.",
+      "og_image_w": 1200,
+      "og_image_h": 630,
+      "schema": "WebPage",
+      "breadcrumb": "Como Ajudar",
+      "og_image": "assets/og/og-canoa-02.webp"
     },
     "politica-privacidade.html": {
       "nav": null,
       "title": "Política de Privacidade | SECRI",
-      "description": "Como o SECRI coleta, usa e protege os dados pessoais enviados por este site, em conformidade com a Lei Geral de Proteção de Dados (Lei 13.709/2018)."
+      "description": "Como o SECRI coleta, usa e protege os dados pessoais enviados por este site, em conformidade com a Lei Geral de Proteção de Dados (Lei 13.709/2018).",
+      "og_image_w": 1200,
+      "og_image_h": 630,
+      "schema": "WebPage",
+      "breadcrumb": "Política de Privacidade",
+      "og_image": "assets/og/og-canoa-02.webp"
     },
     "projetos/canoa-viva.html": {
       "nav": "projetos",
       "title": "Canoa Viva | Canoagem gratuita para adolescentes em Vitória",
       "description": "Projeto gratuito de canoagem havaiana para adolescentes do Território do Bem, na Praia da Guarderia, em Vitória/ES. Parceria com o Instituto Maratonas.",
-      "og_image": "assets/fotos/canoa-viva/canoa-02.webp",
-      "og_image_alt": "Adolescentes carregando juntos a canoa havaiana Benedito sobre a cabeça, atravessando a areia da praia"
+      "og_image": "assets/og/og-canoa-02.webp",
+      "og_image_alt": "Adolescentes carregando juntos a canoa havaiana Benedito sobre a cabeça, atravessando a areia da praia",
+      "og_image_w": 1200,
+      "og_image_h": 630
     },
     "projetos/engajando-futuros.html": {
       "nav": "projetos",
       "title": "Engajando Futuros | Grupo para adolescentes em Vitória ES",
       "description": "Grupo gratuito para adolescentes do Território do Bem, em Vitória/ES: cidadania, convivência e preparação para o mundo do trabalho.",
-      "og_image": "assets/fotos/engajando-futuros/engajando-futuros-01-social.webp",
-      "og_image_alt": "Roda de conversa do grupo Engajando Futuros na biblioteca do SECRI, com adolescentes sentados em círculo e duas educadoras conduzindo"
+      "og_image": "assets/og/og-engajando-futuros-01-social.webp",
+      "og_image_alt": "Roda de conversa do grupo Engajando Futuros na biblioteca do SECRI, com adolescentes sentados em círculo e duas educadoras conduzindo",
+      "og_image_w": 1200,
+      "og_image_h": 630
     },
     "projetos/inova-bem.html": {
       "nav": "projetos",
       "title": "Inova Bem | Reforço escolar gratuito em Vitória ES | SECRI",
       "description": "Aulas gratuitas e personalizadas de Português, Matemática e Inglês para crianças e adolescentes do Território do Bem, em Vitória/ES. Parceria com Luma.",
-      "og_image": "assets/fotos/inova-bem/inova-bem-turma-estudando-tablets.webp",
-      "og_image_alt": "Turma do Inova Bem estudando em mesa coletiva, cada estudante com tablet, teclado e fone de ouvido"
+      "og_image": "assets/og/og-inova-bem-turma-estudando-tablets.webp",
+      "og_image_alt": "Turma do Inova Bem estudando em mesa coletiva, cada estudante com tablet, teclado e fone de ouvido",
+      "og_image_w": 1200,
+      "og_image_h": 630
     },
     "projetos/judo.html": {
       "nav": "projetos",
       "title": "Judô | Aulas gratuitas para crianças em Vitória | SECRI",
       "description": "Aulas gratuitas de judô para crianças e adolescentes do Território do Bem, em Vitória/ES. Disciplina e respeito no tatame do SECRI.",
-      "og_image": "assets/fotos/judo/judo-02.webp",
-      "og_image_alt": "Professora de quimono e faixa preta corrigindo a pegada de dois meninos em pé no tatame, com a turma sentada ao fundo"
+      "og_image": "assets/og/og-judo-02.webp",
+      "og_image_alt": "Professora de quimono e faixa preta corrigindo a pegada de dois meninos em pé no tatame, com a turma sentada ao fundo",
+      "og_image_w": 1200,
+      "og_image_h": 630
     },
     "projetos/movimento-com-qualidade-de-vida.html": {
       "nav": "projetos",
       "title": "Movimento com Qualidade de Vida | Atividades 50+ em Vitória",
       "description": "Encontros semanais gratuitos para pessoas com mais de 50 anos no Território do Bem, em Vitória/ES: atividade física, artesanato e convivência no SECRI.",
-      "og_image": "assets/fotos/movimento-com-qualidade-de-vida/mov-qualid-de-vida-01.webp",
-      "og_image_alt": "Grupo de adultos com mais de 50 anos fazendo exercício de agachamento com apoio de cadeira, orientados por um educador físico"
+      "og_image": "assets/og/og-mov-qualid-de-vida-01.webp",
+      "og_image_alt": "Grupo de adultos com mais de 50 anos fazendo exercício de agachamento com apoio de cadeira, orientados por um educador físico",
+      "og_image_w": 1200,
+      "og_image_h": 630
     },
     "projetos/o-som-do-bem.html": {
       "nav": "projetos",
       "title": "O Som do Bem | Aulas de flauta gratuitas em Vitória | SECRI",
       "description": "Projeto gratuito de música do SECRI ensina flauta a 30 crianças e adolescentes do Território do Bem, em Vitória/ES. Patrocínio ArcelorMittal Tubarão.",
-      "og_image": "assets/fotos/oficina-de-canto/canto-01.webp",
-      "og_image_alt": "Crianças com camiseta do SECRI reunidas sob o painel do Recital de Canto Coral, na sede da instituição"
+      "og_image": "assets/og/og-canto-01.webp",
+      "og_image_alt": "Crianças com camiseta do SECRI reunidas sob o painel do Recital de Canto Coral, na sede da instituição",
+      "og_image_w": 1200,
+      "og_image_h": 630
     },
     "projetos/oficina-de-canto.html": {
       "nav": "projetos",
       "title": "Oficina de Canto | Coral infantil gratuito em Vitória ES",
       "description": "Oficina gratuita de canto coral para crianças de 6 a 12 anos do Território do Bem, em Vitória/ES, com apresentações públicas. Parceria com a SETADES.",
-      "og_image": "assets/fotos/oficina-de-canto/canto-01.webp",
-      "og_image_alt": "Coral de cerca de 30 crianças com camiseta do SECRI posando sob o painel Recital Canto Coral"
+      "og_image": "assets/og/og-canto-01.webp",
+      "og_image_alt": "Coral de cerca de 30 crianças com camiseta do SECRI posando sob o painel Recital Canto Coral",
+      "og_image_w": 1200,
+      "og_image_h": 630
     },
     "projetos/travessia.html": {
       "nav": "projetos",
       "title": "Travessia | Ballet clássico gratuito em Vitória ES | SECRI",
       "description": "Aulas gratuitas de ballet clássico para crianças de 7 a 12 anos do Território do Bem, em Vitória/ES, na Academia Duetto.",
-      "og_image": "assets/fotos/travessia/travessia-03.webp",
-      "og_image_alt": "Turma de bailarinas do Projeto Travessia com os braços em quinta posição, espalhadas pelo salão de dança da Academia Duetto"
+      "og_image": "assets/og/og-travessia-03.webp",
+      "og_image_alt": "Turma de bailarinas do Projeto Travessia com os braços em quinta posição, espalhadas pelo salão de dança da Academia Duetto",
+      "og_image_w": 1200,
+      "og_image_h": 630
     },
     "projetos.html": {
       "nav": "projetos",
       "title": "Projetos | ONG para crianças em Vitória ES | SECRI",
-      "description": "Música, esporte, dança, reforço escolar e convivência: 8 projetos gratuitos do SECRI para crianças e adolescentes do Território do Bem, em Vitória/ES."
+      "description": "Música, esporte, dança, reforço escolar e convivência: 8 projetos gratuitos do SECRI para crianças e adolescentes do Território do Bem, em Vitória/ES.",
+      "og_image_w": 1200,
+      "og_image_h": 630,
+      "schema": "CollectionPage",
+      "breadcrumb": "Projetos",
+      "og_image": "assets/og/og-canoa-02.webp"
     },
     "404.html": {
       "nav": null,
       "title": "Página não encontrada | SECRI",
       "description": "A página que você procura não existe ou foi movida. Veja os projetos, saiba como ajudar ou fale com o SECRI, em Vitória/ES.",
-      "noindex": true
+      "noindex": true,
+      "og_image_w": 1200,
+      "og_image_h": 630,
+      "og_image": "assets/og/og-canoa-02.webp"
     },
     "pendencias.html": {
       "nav": null,
       "title": "Pendências de validação | SECRI",
       "description": "Página interna de apoio à reunião de validação com o SECRI. Lista as informações que ainda precisam ser confirmadas antes da publicação.",
-      "noindex": true
+      "noindex": true,
+      "og_image_w": 1200,
+      "og_image_h": 630,
+      "og_image": "assets/og/og-canoa-02.webp"
     }
   }
 }

@@ -2,7 +2,11 @@ User-agent: *
 Allow: /
 
 # páginas internas de revisão, fora do índice
+Disallow: /404.html
 Disallow: /pendencias.html
 Disallow: /styleguide.html
+
+# arquivos de trabalho, não são conteúdo do site
+Disallow: /tools/
 
 Sitemap: https://secri.org.br/sitemap.xml

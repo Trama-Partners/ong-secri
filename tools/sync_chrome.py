@@ -38,6 +38,67 @@ CLASSES = {
 }
 
 
+ORGANIZACAO = {
+    '@type': 'NGO',
+    'name': 'SECRI',
+    'alternateName': 'Serviço de Engajamento Comunitário',
+    'url': 'https://secri.org.br/',
+    'taxID': '31.795.321/0001-53',
+}
+
+
+def monta_jsonld(cfg: dict, rel: str, meta: dict) -> str:
+    """Dados estruturados das páginas institucionais.
+
+    As páginas de projeto trazem os seus no corpo, escritos por
+    gerar_projetos.py a partir dos markdowns; aqui elas são puladas para não
+    duplicar o mesmo tipo duas vezes no documento.
+    """
+    if meta.get('noindex') or rel.startswith('projetos/'):
+        return ''
+
+    base = cfg['base_url'].rstrip('/')
+    url = base + '/' + ('' if rel == 'index.html' else rel)
+    blocos = []
+
+    tipo = meta.get('schema', 'WebPage')
+    pagina = {
+        '@context': 'https://schema.org',
+        '@type': tipo,
+        'name': meta['title'],
+        'description': meta['description'],
+        'url': url,
+        'inLanguage': 'pt-BR',
+        'isPartOf': {'@type': 'WebSite', 'name': 'SECRI', 'url': base + '/'},
+        'publisher': ORGANIZACAO,
+    }
+    if meta.get('og_image'):
+        pagina['primaryImageOfPage'] = {
+            '@type': 'ImageObject',
+            'url': f'{base}/{meta["og_image"]}',
+            'width': meta.get('og_image_w'),
+            'height': meta.get('og_image_h'),
+            'caption': meta.get('og_image_alt', ''),
+        }
+    blocos.append(pagina)
+
+    # trilha de navegação: ajuda o Google a exibir o caminho no resultado
+    if rel != 'index.html':
+        blocos.append({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            'itemListElement': [
+                {'@type': 'ListItem', 'position': 1, 'name': 'Início', 'item': base + '/'},
+                {'@type': 'ListItem', 'position': 2,
+                 'name': meta.get('breadcrumb', meta['title'].split('|')[0].strip()),
+                 'item': url},
+            ]})
+
+    return '\n'.join(
+        '<script type="application/ld+json">\n'
+        + json.dumps(b, ensure_ascii=False, indent=2) + '\n</script>' for b in blocos)
+
+
 def le(nome: str) -> str:
     with open(os.path.join(PARTIALS, nome), encoding='utf-8') as fh:
         return fh.read()
@@ -81,6 +142,9 @@ def chrome_da_pagina(cfg: dict, caminho_rel: str, meta: dict) -> tuple[str, str,
             .replace('{{CANONICAL}}', url)
             .replace('{{OG_IMAGE}}', cfg['base_url'].rstrip('/') + '/' + og)
             .replace('{{OG_IMAGE_ALT}}', og_alt)
+            .replace('{{OG_IMAGE_W}}', str(meta.get('og_image_w', '')))
+            .replace('{{OG_IMAGE_H}}', str(meta.get('og_image_h', '')))
+            .replace('{{JSONLD}}', monta_jsonld(cfg, caminho_rel, meta))
             .replace('{{BASE}}', base))
 
     header = (le('header.html')

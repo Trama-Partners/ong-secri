@@ -1,88 +1,277 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://secri.org.br/</loc>
-    <lastmod>2026-09-17</lastmod>
-    <priority>1.0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://secri.org.br/como-ajudar.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://secri.org.br/contato.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://secri.org.br/impacto.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/institucional/institucional-03-social.webp</image:loc>
+      <image:title>Pratos de arroz, feijão, carne e salada servidos na cozinha do SECRI</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://secri.org.br/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/canoa-viva/canoa-02.webp</image:loc>
+      <image:title>Adolescentes carregando juntos a canoa havaiana Benedito sobre a cabeça, atravessando a areia da praia</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/o-som-do-bem/o-som-do-bem-03.webp</image:loc>
+      <image:title>Turma do projeto O Som do Bem em atividade sobre instrumentos musicais</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/canoa-viva/canoa-01.webp</image:loc>
+      <image:title>Adolescentes do projeto Canoa Viva remando na Praia da Guarderia, em Vitória</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/travessia/travessia-03.webp</image:loc>
+      <image:title>Turma de bailarinas do Projeto Travessia no salão da Academia Duetto</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/inova-bem/inova-bem-turma-estudando-tablets.webp</image:loc>
+      <image:title>Turma do Inova Bem estudando com tablet, teclado e fone de ouvido</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/parceiros/arcelormittal.png</image:loc>
+      <image:title>ArcelorMittal</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/parceiros/canoa-viva.png</image:loc>
+      <image:title>Canoa Viva Vitória - Instituto Maratonas</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/parceiros/scfv.png</image:loc>
+      <image:title>SCFV - Serviço de Convivência e Fortalecimento de Vínculos</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/parceiros/igreja-de-jesus-cristo.png</image:loc>
+      <image:title>A Igreja de Jesus Cristo dos Santos dos Últimos Dias</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://secri.org.br/noticias.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/oficina-de-canto/canto-01.webp</image:loc>
+      <image:title>Coral de crianças com camiseta do SECRI posando sob o painel do Recital de Canto Coral</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/travessia/travessia-02.webp</image:loc>
+      <image:title>Bailarinas do Projeto Travessia em posição de ballet clássico durante aula</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/institucional/institucional-05-social.webp</image:loc>
+      <image:title>Duas meninas de camiseta do SECRI desenhando juntas na biblioteca da instituição</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/o-som-do-bem/o-som-do-bem-04.webp</image:loc>
+      <image:title>Dois meninos do projeto O Som do Bem desenhando juntos na biblioteca do SECRI</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://secri.org.br/politica-privacidade.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://secri.org.br/projetos.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/o-som-do-bem/o-som-do-bem-03.webp</image:loc>
+      <image:title>Turma do projeto O Som do Bem desenhando instrumentos musicais em sala com mural de mapa-múndi</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/travessia/travessia-03.webp</image:loc>
+      <image:title>Turma de bailarinas do Projeto Travessia com os braços em quinta posição, espalhadas pelo salão de dança da Academia Duetto</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/oficina-de-canto/canto-01.webp</image:loc>
+      <image:title>Coral de cerca de 30 crianças com camiseta do SECRI posando sob o painel Recital Canto Coral</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/inova-bem/inova-bem-turma-estudando-tablets.webp</image:loc>
+      <image:title>Turma do Inova Bem estudando em mesa coletiva, cada estudante com tablet, teclado e fone de ouvido</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/canoa-viva/canoa-02.webp</image:loc>
+      <image:title>Adolescentes carregando juntos a canoa havaiana Benedito sobre a cabeça, atravessando a areia da praia</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/judo/judo-02.webp</image:loc>
+      <image:title>Professora de quimono e faixa preta corrigindo a pegada de dois meninos em pé no tatame, com a turma sentada ao fundo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/engajando-futuros/engajando-futuros-01-social.webp</image:loc>
+      <image:title>Roda de conversa do grupo Engajando Futuros na biblioteca do SECRI, com adolescentes sentados em círculo e duas educadoras conduzindo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/movimento-com-qualidade-de-vida/mov-qualid-de-vida-01.webp</image:loc>
+      <image:title>Grupo de adultos com mais de 50 anos fazendo exercício de agachamento com apoio de cadeira, orientados por um educador físico</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://secri.org.br/projetos/canoa-viva.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/canoa-viva/canoa-02.webp</image:loc>
+      <image:title>Adolescentes carregando juntos a canoa havaiana Benedito sobre a cabeça, atravessando a areia da praia</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/parceiros/canoa-viva.png</image:loc>
+      <image:title>Instituto Maratonas</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/canoa-viva/canoa-01.webp</image:loc>
+      <image:title>Grupo de adolescentes do projeto Canoa Viva remando em canoa havaiana na Praia da Guarderia, em Vitória, com veleiros ancorados ao fundo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/canoa-viva/canoa-05.webp</image:loc>
+      <image:title>Três adolescentes sentados na canoa com colete salva-vidas e remo em punho, recebendo orientação do instrutor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/canoa-viva/canoa-06.webp</image:loc>
+      <image:title>Turma do Canoa Viva embarcando na canoa dentro d&amp;#x27;água, acompanhada por dois educadores</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://secri.org.br/projetos/engajando-futuros.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/engajando-futuros/engajando-futuros-01-social.webp</image:loc>
+      <image:title>Roda de conversa do grupo Engajando Futuros na biblioteca do SECRI, com adolescentes sentados em círculo e duas educadoras conduzindo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/parceiros/scfv.png</image:loc>
+      <image:title>SCFV - Serviço de Convivência e Fortalecimento de Vínculos</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://secri.org.br/projetos/inova-bem.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/inova-bem/inova-bem-turma-estudando-tablets.webp</image:loc>
+      <image:title>Turma do Inova Bem estudando em mesa coletiva, cada estudante com tablet, teclado e fone de ouvido</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/inova-bem/inova-bem-estudante-escrevendo-caderno.webp</image:loc>
+      <image:title>Estudante do Inova Bem escrevendo no caderno durante aula online, com educadora acompanhando ao fundo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/inova-bem/inova-bem-aula-geometria-videochamada-anonimizada.webp</image:loc>
+      <image:title>Estudante resolvendo exercício de geometria no caderno enquanto acompanha a professora por videochamada no tablet</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://secri.org.br/projetos/judo.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/judo/judo-02.webp</image:loc>
+      <image:title>Professora de quimono e faixa preta corrigindo a pegada de dois meninos em pé no tatame, com a turma sentada ao fundo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/judo/judo-01.webp</image:loc>
+      <image:title>Crianças treinando judô em duplas sobre tatame azul, acompanhadas pela professora de quimono e faixa preta</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://secri.org.br/projetos/movimento-com-qualidade-de-vida.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/movimento-com-qualidade-de-vida/mov-qualid-de-vida-01.webp</image:loc>
+      <image:title>Grupo de adultos com mais de 50 anos fazendo exercício de agachamento com apoio de cadeira, orientados por um educador físico</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/movimento-com-qualidade-de-vida/mov-qualid-de-vida-02.webp</image:loc>
+      <image:title>Roda de mulheres em volta da mesa em oficina de bordado, com peças bordadas em rosa e azul expostas à frente</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://secri.org.br/projetos/o-som-do-bem.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/oficina-de-canto/canto-01.webp</image:loc>
+      <image:title>Crianças com camiseta do SECRI reunidas sob o painel do Recital de Canto Coral</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/parceiros/arcelormittal.png</image:loc>
+      <image:title>ArcelorMittal Tubarão</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/o-som-do-bem/o-som-do-bem-03.webp</image:loc>
+      <image:title>Turma do projeto O Som do Bem desenhando instrumentos musicais em sala com mural de mapa-múndi</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/o-som-do-bem/o-som-do-bem-04.webp</image:loc>
+      <image:title>Dois meninos de camiseta azul-clara desenhando juntos na biblioteca do SECRI</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/o-som-do-bem/o-som-do-bem-01.webp</image:loc>
+      <image:title>Duas meninas colorindo desenhos de instrumentos musicais em mesa cheia de lápis de cor</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://secri.org.br/projetos/oficina-de-canto.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/oficina-de-canto/canto-01.webp</image:loc>
+      <image:title>Coral de cerca de 30 crianças com camiseta do SECRI posando sob o painel Recital Canto Coral</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/parceiros/scfv.png</image:loc>
+      <image:title>SCFV - Serviço de Convivência e Fortalecimento de Vínculos</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://secri.org.br/projetos/travessia.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/travessia/travessia-03.webp</image:loc>
+      <image:title>Turma de bailarinas do Projeto Travessia com os braços em quinta posição, espalhadas pelo salão de dança da Academia Duetto</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/parceiros/arcelormittal.png</image:loc>
+      <image:title>ArcelorMittal</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/travessia/travessia-02.webp</image:loc>
+      <image:title>Bailarinas do Projeto Travessia em posição de ballet clássico, de collant preto</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://secri.org.br/quem-somos.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://secri.org.br/assets/fotos/institucional/institucional-02.webp</image:loc>
+      <image:title>Menina de costas lendo um livro no mirante da sede do SECRI, com o morro e as casas do Território do Bem ao fundo</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://secri.org.br/transparencia.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>
