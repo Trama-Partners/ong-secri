@@ -158,9 +158,11 @@ def caixa_pendencias(fm: dict) -> str:
 
 
 def ficha_tecnica(fm: dict, cor: str) -> str:
-    campos = [('Público', fm.get('publico')), ('Faixa etária', fm.get('faixa_etaria')),
-              ('Onde acontece', fm.get('local')), ('Frequência', fm.get('frequencia')),
-              ('Custo', 'Gratuito')]
+    # Faixa etária e custo saíram da ficha a pedido do cliente. A gratuidade
+    # continua dita no texto de abertura e na FAQ de cada projeto.
+    campos = [('Público', fm.get('publico')),
+              ('Onde acontece', fm.get('local')),
+              ('Frequência', fm.get('frequencia'))]
     linhas = []
     for rotulo, valor in campos:
         if not valor:
