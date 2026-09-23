@@ -138,6 +138,102 @@ def resolve_links(html_txt: str, na_raiz: bool) -> str:
     return re.sub(r'href="/projetos/([a-z0-9-]+)/?"', destino, html_txt)
 
 
+# Quem banca e quem executa são papéis diferentes, então a página separa os
+# dois. `logo` vazio renderiza uma caixa nomeada avisando que o arquivo ainda
+# precisa ser conseguido — mesma lógica da faixa de parceiros da home.
+PARCEIROS = {
+ 'o-som-do-bem': {
+   'patrocinio': [('ArcelorMittal Tubarão', 'arcelormittal.png',
+                   'Aprovado em seleção pública no edital ArcelorMittal Investe')],
+   'apoio': [],
+ },
+ 'oficina-de-canto': {
+   'patrocinio': [('SETADES - Secretaria de Trabalho, Assistência e Desenvolvimento Social', '',
+                   'Termo de Fomento nº 052/2024 - D7JCM')],
+   'apoio': [('SCFV - Serviço de Convivência e Fortalecimento de Vínculos', 'scfv.png',
+              'A oficina é ofertada dentro do SCFV')],
+ },
+ 'engajando-futuros': {
+   'patrocinio': [('SETADES - Secretaria de Trabalho, Assistência e Desenvolvimento Social', '',
+                   'Termo de Fomento nº 052/2024 - D7JCM')],
+   'apoio': [('SCFV - Serviço de Convivência e Fortalecimento de Vínculos', 'scfv.png',
+              'O grupo é ofertado dentro do SCFV'),
+             ('UFES - Engenharia Elétrica', '',
+              'Minicurso Saberes Tecnológicos e projeto Pequenos Cientistas')],
+ },
+ 'travessia': {
+   'patrocinio': [('ArcelorMittal', 'arcelormittal.png',
+                   'Viabilizou o espetáculo Ballerina, na Casa da Música Sônia Cabral')],
+   'apoio': [('Mover-se Cia de Dança', '', 'Execução do projeto'),
+             ('Academia Duetto Arte e Movimento', '', 'Cede o espaço e a estrutura técnica'),
+             ('Marcelo Lages', '', 'Apoio ao projeto')],
+ },
+ 'inova-bem': {
+   'patrocinio': [],
+   'apoio': [('Luma - Ensino Personalizado', '', 'Metodologia e execução das aulas')],
+ },
+ 'canoa-viva': {
+   'patrocinio': [('Vale', '', 'Recursos da Lei de Incentivo ao Esporte'),
+                  ('Ministério do Esporte', '', 'Lei de Incentivo ao Esporte'),
+                  ('Estel', '', ''),
+                  ('timenow', '', '')],
+   'apoio': [('Instituto Maratonas', 'canoa-viva.png',
+              'Executa a atividade e disponibiliza canoas, equipamentos e instrutores')],
+ },
+ 'judo': {
+   'patrocinio': [],
+   'apoio': [('Instituto Maratonas', '', 'Executa a atividade')],
+ },
+ 'movimento-com-qualidade-de-vida': {
+   'patrocinio': [],
+   'apoio': [],
+ },
+}
+
+
+def cartao_parceiro(nome: str, logo: str, detalhe: str) -> str:
+    if logo:
+        visual = (f'<img src="../assets/parceiros/{logo}" alt="{esc(nome)}" loading="lazy" '
+                  f'decoding="async" width="600" height="240" class="max-h-16 w-auto">')
+        moldura = 'bg-white ring-1 ring-ink-200'
+    else:
+        # o nome já aparece como legenda logo abaixo da caixa; repeti-lo aqui
+        # dentro deixaria a mesma palavra duas vezes coladas
+        visual = '<span class="text-center text-xs text-ink-400">logo a buscar</span>'
+        moldura = 'border-2 border-dashed border-ink-300 bg-white'
+    legenda = (f'<p class="mt-2 text-xs leading-relaxed text-ink-600">{MD.inline(detalhe)}</p>'
+               if detalhe else '')
+    return (f'<div><div class="flex h-20 items-center justify-center rounded-xl p-3 {moldura}">'
+            f'{visual}</div>'
+            f'<p class="mt-2 text-sm font-semibold text-ink-900">{esc(nome)}</p>{legenda}</div>')
+
+
+def blocos_parceiros(slug: str, cor: str) -> str:
+    dados = PARCEIROS.get(slug, {})
+    partes = []
+    for chave, titulo, explica in [
+            ('patrocinio', 'Patrocínio', 'Quem financia o projeto'),
+            ('apoio', 'Apoio', 'Quem executa e sustenta a atividade')]:
+        itens = dados.get(chave, [])
+        if not itens:
+            continue
+        cartoes = ''.join(cartao_parceiro(*i) for i in itens)
+        partes.append(f"""
+  <div class="mt-8">
+    <h2 class="font-display text-sm font-bold uppercase tracking-wide text-{cor}-700">{titulo}</h2>
+    <p class="mb-4 text-xs text-ink-600">{explica}</p>
+    <div class="grid gap-4 sm:grid-cols-2">{cartoes}</div>
+  </div>""")
+    if not partes:
+        return ('\n  <div class="mt-8 rounded-2xl border border-gold-300 bg-gold-50 p-5">'
+                '<p class="text-sm leading-relaxed text-ink-800">'
+                '<strong class="font-bold">Patrocínio e apoio:</strong> '
+                '<span class="inline-flex items-center gap-1 rounded-full bg-gold-100 px-2.5 py-0.5 '
+                'text-xs font-bold uppercase tracking-wide text-gold-700 ring-1 ring-gold-300">'
+                'a confirmar</span></p></div>')
+    return ''.join(partes)
+
+
 def caixa_pendencias(fm: dict) -> str:
     if not fm.get('pendencias'):
         return ''
@@ -173,22 +269,6 @@ def ficha_tecnica(fm: dict, cor: str) -> str:
             f'<dd class="mt-1 text-ink-900">{MD.inline(str(valor))}</dd></div>')
     return (f'<dl class="rounded-2xl border-t-4 border-{cor}-500 bg-ink-50 px-5 py-2 sm:px-6">'
             + ''.join(linhas) + '</dl>')
-
-
-def bloco_parceiro(fm: dict, cor: str) -> str:
-    nome = fm.get('parceiro')
-    if not nome or nome == 'A CONFIRMAR':
-        return ''
-    detalhe = fm.get('parceiro_detalhe', '')
-    tipo = fm.get('parceiro_tipo', '')
-    return f'''
-  <div class="mt-10 rounded-2xl bg-{cor}-50 p-6 ring-1 ring-{cor}-300 sm:p-7">
-    <p class="mb-1 font-display text-xs font-bold uppercase tracking-wide text-{cor}-700">
-      {esc(tipo) or 'Parceria'}
-    </p>
-    <p class="font-display text-lg font-bold text-ink-900">{MD.inline(nome)}</p>
-    {f'<p class="mt-2 text-sm leading-relaxed text-ink-600">{MD.inline(detalhe)}</p>' if detalhe else ''}
-  </div>'''
 
 
 def galeria(slug: str, cor: str) -> str:
@@ -360,7 +440,7 @@ def gera(caminho_md: str) -> tuple[str, dict]:
       <aside class="lg:pt-10">
         <h2 class="mb-4 font-display text-sm font-bold uppercase tracking-wide text-ink-600">Ficha técnica</h2>
         {ficha_tecnica(fm, cor)}
-        {bloco_parceiro(fm, cor)}
+        {blocos_parceiros(slug, cor)}
       </aside>
     </div>
 {galeria(slug, cor)}
