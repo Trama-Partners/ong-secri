@@ -52,7 +52,7 @@ apple-touch-icon · `site.webmanifest` · `noindex` nas páginas internas.
 | index | `WebPage` + `NGO` (CNPJ, endereço, telefones, sameAs) |
 | quem-somos | `AboutPage` + `BreadcrumbList` |
 | projetos | `CollectionPage` + `FAQPage` + `BreadcrumbList` |
-| cada projeto | `Course` ou `SportsActivityLocation` ou `Event` + `BreadcrumbList` + `FAQPage` |
+| cada projeto | `Course`, `SportsActivityLocation` ou `Service` + `BreadcrumbList` + `FAQPage` |
 | contato | `ContactPage` + `NGO` com dois `ContactPoint` |
 | demais | `WebPage` + `BreadcrumbList` |
 

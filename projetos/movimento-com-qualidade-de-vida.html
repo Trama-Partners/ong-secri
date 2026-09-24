@@ -220,29 +220,39 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Event",
+  "@type": "Service",
   "name": "Movimento com Qualidade de Vida",
+  "serviceType": "Grupo de convivência e atividade física para pessoas com mais de 50 anos",
   "description": "Encontros semanais gratuitos para pessoas com mais de 50 anos no Território do Bem, em Vitória/ES, com atividades físicas, artesanais, culturais e socioeducativas.",
-  "eventSchedule": {
-    "@type": "Schedule",
-    "repeatFrequency": "P1W"
+  "audience": {
+    "@type": "PeopleAudience",
+    "suggestedMinAge": 50
   },
-  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "isAccessibleForFree": true,
-  "typicalAgeRange": "50-",
-  "location": {
+  "areaServed": {
     "@type": "Place",
-    "name": "SECRI - Serviço de Engajamento Comunitário",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Rua Tenente Setúbal, 395",
-      "addressLocality": "Vitória",
-      "addressRegion": "ES",
-      "postalCode": "29047-850",
-      "addressCountry": "BR"
+    "name": "Território do Bem, Vitória/ES"
+  },
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceLocation": {
+      "@type": "Place",
+      "name": "SECRI - Serviço de Engajamento Comunitário",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Tenente Setúbal, 395",
+        "addressLocality": "Vitória",
+        "addressRegion": "ES",
+        "postalCode": "29047-850",
+        "addressCountry": "BR"
+      }
     }
   },
-  "organizer": {
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "BRL"
+  },
+  "provider": {
     "@type": "NGO",
     "name": "SECRI - Serviço de Engajamento Comunitário",
     "taxID": "31.795.321/0001-53",
