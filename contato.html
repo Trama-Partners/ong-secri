@@ -142,6 +142,7 @@
           <div>
             <dt class="font-display text-xs font-bold uppercase tracking-wide text-ink-600">Endereço</dt>
             <dd class="mt-1 leading-relaxed text-ink-900">Rua Tenente Setúbal, 395 - São Benedito<br>Vitória/ES, CEP 29047-850</dd>
+            <dd class="mt-1"><a href="https://maps.app.goo.gl/X6PTheesC7vhV7ss8" target="_blank" rel="noopener" class="text-sm font-semibold text-sky-700 underline underline-offset-2 hover:text-rose-700">Abrir no Google Maps<span class="sr-only"> (abre em nova aba)</span></a></dd>
           </div>
           <div>
             <dt class="font-display text-xs font-bold uppercase tracking-wide text-ink-600">WhatsApp e telefone</dt>
@@ -169,13 +170,15 @@
           </div>
           <div>
             <dt class="font-display text-xs font-bold uppercase tracking-wide text-ink-600">YouTube</dt>
-            <dd class="mt-1 text-ink-900">SECRI - Serviço de Engajamento Comunitário <span class="ml-1 inline-flex items-center gap-1 rounded-full bg-gold-100 px-2.5 py-0.5 text-xs font-bold uppercase tracking-wide text-gold-700 ring-1 ring-gold-300">link a confirmar</span></dd>
+            <dd class="mt-1"><a href="https://www.youtube.com/@secri-servicodeengajamento8817" target="_blank" rel="noopener" class="font-semibold text-sky-700 underline underline-offset-2 hover:text-rose-700">SECRI - Serviço de Engajamento Comunitário</a></dd>
           </div>
         </dl>
 
-        <div class="mt-8 rounded-2xl border-2 border-dashed border-ink-300 bg-ink-50 p-8 text-center">
-          <p class="font-mono text-xs text-ink-600">[ mapa: inserir embed do Google Maps ]</p>
-          <p class="mt-2 text-xs text-ink-600">Aguardando o link do endereço no Google Maps</p>
+        <div class="mt-8 overflow-hidden rounded-2xl ring-1 ring-ink-200">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.935058863566!2d-40.306891!3d-20.302954999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb817df1e99d87d%3A0xed7c54b5cda3da2a!2sSECRI%20-%20Servi%C3%A7o%20de%20Engajamento%20Comunit%C3%A1rio%20(Sede)!5e0!3m2!1spt-BR!2sbr!4v1790353768343!5m2!1spt-BR!2sbr"
+                  title="Mapa da sede do SECRI na Rua Tenente Setúbal, 395, São Benedito, Vitória/ES"
+                  width="600" height="450" class="block aspect-[4/3] h-auto w-full border-0"
+                  allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
       </section>
 
@@ -236,6 +239,12 @@
     "postalCode": "29047-850",
     "addressCountry": "BR"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -20.302955,
+    "longitude": -40.306891
+  },
+  "hasMap": "https://maps.app.goo.gl/X6PTheesC7vhV7ss8",
   "contactPoint": [
     {
       "@type": "ContactPoint",
@@ -252,7 +261,7 @@
       "availableLanguage": "Portuguese"
     }
   ],
-  "sameAs": ["https://instagram.com/ong_secri"]
+  "sameAs": ["https://instagram.com/ong_secri", "https://www.youtube.com/@secri-servicodeengajamento8817"]
 }
 </script>
 </main>
@@ -262,7 +271,10 @@
       <img src="./assets/logo-secri-light.png" alt="SECRI"
            width="1308" height="783" loading="lazy" decoding="async" class="mb-5 h-auto w-56">
       <p class="mb-4 max-w-xs text-sm leading-relaxed text-ink-200">Promovendo desenvolvimento humano e cidadania em Vitória/ES desde 1988.</p>
-      <a href="https://instagram.com/ong_secri" target="_blank" rel="noopener" class="text-sm font-semibold text-white hover:text-gold-500">@ong_secri no Instagram</a>
+      <ul class="flex flex-col gap-2">
+        <li><a href="https://instagram.com/ong_secri" target="_blank" rel="noopener" class="text-sm font-semibold text-white hover:text-gold-500">@ong_secri no Instagram</a></li>
+        <li><a href="https://www.youtube.com/@secri-servicodeengajamento8817" target="_blank" rel="noopener" class="text-sm font-semibold text-white hover:text-gold-500">SECRI no YouTube</a></li>
+      </ul>
     </div>
     <div>
       <h2 class="mb-4 font-display text-xs font-bold uppercase tracking-widest text-ink-400">Institucional</h2>

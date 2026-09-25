@@ -108,6 +108,8 @@ def main() -> int:
                '- E-mail: contato@secri.org.br',
                '- E-mail para parcerias e doações de empresas: financeiro@secri.org.br',
                '- Instagram: https://instagram.com/ong_secri',
+               '- YouTube: https://www.youtube.com/@secri-servicodeengajamento8817',
+               '- Mapa: https://maps.app.goo.gl/X6PTheesC7vhV7ss8',
                '- Pix (CNPJ): 31.795.321/0001-53',
                '- Conta bancária: SICOOB 756, agência 3010, conta corrente 56729-9',
                '',
