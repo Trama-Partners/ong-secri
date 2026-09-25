@@ -208,7 +208,35 @@ Instância
 
 | Voluntários | Apoio às ações e projetos institucionais
 
-Composição nominal da Diretoria e do Conselho Fiscal: a confirmar . A ata de eleição e posse 2026-2028 está publicada em Transparência . A divulgação dos nomes no site depende de autorização da equipe.
+## Diretoria e Conselho Fiscal
+
+Gestão 2026-2028, eleita em assembleia conforme a ata de eleição e posse (PDF, abre em nova aba).
+
+### Diretoria Executiva
+
+Presidente
+
+Mariza de Moraes Cipriano
+
+Vice-Presidente
+
+Lucienne Marques Batista Ottaiano
+
+Diretora Financeira
+
+Maria Ângela Varella Cabral
+
+Diretora Técnica
+
+Marly Imperial Garabelli
+
+### Conselho Fiscal
+
+- Zaine Helena Cheim de Figueiredo
+
+- José Raymundo Pontes Barreira
+
+- Luciano Antônio Campagnaro
 
 ## Selos de Transparência
 
@@ -384,7 +412,7 @@ a confirmar
 
 ## Documentos constitutivos
 
-Os documentos que regem o funcionamento do SECRI.
+Os documentos que regem o funcionamento do SECRI. A composição atual da diretoria e do conselho fiscal está em Diretoria e Conselho .
 
 -
 
@@ -618,21 +646,33 @@ Pode. Vários existem por patrocínio empresarial e leis de incentivo. Fale com 
 
 ---
 
-<!-- fonte: https://secri.org.br/como-ajudar.html -->
+<!-- fonte: https://secri.org.br/doe.html -->
 
-# Como Ajudar
+# Doe para o SECRI
 
-O trabalho do SECRI é sustentado pela comunidade. Doações, parcerias e ações voluntárias ampliam as oportunidades oferecidas a crianças, adolescentes e famílias.
+Sua doação mantém gratuitos os projetos de arte, esporte e qualificação para crianças, adolescentes e famílias do Território do Bem, em Vitória/ES. Doe por Pix, transferência bancária ou com os créditos da Nota Premiada Capixaba.
 
 ## Doação financeira
 
 ### Pix
 
+[imagem] QR Code para doar ao SECRI por Pix, chave CNPJ 31.795.321/0001-53
+
 Chave (CNPJ)
 
 31.795.321/0001-53
 
+Copiar
+
 Titular: Serviço de Engajamento Comunitário - SECRI
+
+Pix copia e cola
+
+00020126360014br.gov.bcb.pix0114317953210001535204000053039865802BR5905SECRI6007VITORIA62070503***6304C148
+
+Copiar
+
+No app do banco, escolha Pix → Pix copia e cola e informe o valor.
 
 ### Transferência bancária
 
@@ -647,6 +687,10 @@ Agência
 Conta corrente
 
 56729-9
+
+CNPJ
+
+31.795.321/0001-53
 
 Titular
 
@@ -664,6 +708,28 @@ Doe seus créditos do programa estadual sem gastar nada. Basta pedir o CPF na no
 
 Acessar a Nota Premiada Capixaba →
 
+## Para onde vai sua doação
+
+As doações sustentam os oito projetos gratuitos do SECRI e o acompanhamento das famílias atendidas no Território do Bem.
+
+Exemplos do que cada valor garante: a confirmar
+
+A aplicação dos recursos é publicada todo ano no Relatório de Atividades e no Balanço Patrimonial, disponíveis em Transparência .
+
+## Recibo e benefício fiscal
+
+### Recibo da doação
+
+Envie o comprovante com seu nome e CPF ou CNPJ para financeiro@secri.org.br .
+
+Prazo e forma de emissão do recibo: a confirmar
+
+### Dedução no Imposto de Renda
+
+Possibilidade de dedução para pessoas físicas e jurídicas: a confirmar
+
+Empresas que queiram apoiar por leis de incentivo podem falar com o setor financeiro .
+
 ## Doação de materiais
 
 Itens sempre bem-vindos para as atividades e para as famílias atendidas. Entregas na sede, na Rua Tenente Setúbal, 395, São Benedito.
@@ -679,6 +745,42 @@ Itens sempre bem-vindos para as atividades e para as famílias atendidas. Entreg
 - Instrumentos musicais
 
 Antes de trazer uma doação maior, ligue para (27) 99849-9507 para combinar o recebimento.
+
+## Perguntas frequentes
+
+Como doar para o SECRI?
++
+
+Por Pix, com a chave CNPJ 31.795.321/0001-53, ou por transferência para o SICOOB (756), agência 3010, conta corrente 56729-9, em nome do Serviço de Engajamento Comunitário - SECRI.
+
+Dá para ajudar sem gastar nada?
++
+
+Sim. Pela Nota Premiada Capixaba, você indica o SECRI como instituição beneficiada e pede o CPF na nota a cada compra. Os créditos vão para o SECRI sem custo para você.
+
+Onde entrego doações de materiais?
++
+
+Na sede do SECRI, na Rua Tenente Setúbal, 395, São Benedito, Vitória/ES. Para doações maiores, ligue antes para (27) 99849-9507.
+
+Como sei que o dinheiro foi bem usado?
++
+
+O SECRI publica o Relatório de Atividades e o Balanço Patrimonial de cada ano na página de Transparência .
+
+---
+
+<!-- fonte: https://secri.org.br/como-ajudar.html -->
+
+# Como Ajudar
+
+O trabalho do SECRI em Vitória/ES é sustentado pela comunidade. Doações, parcerias e ações voluntárias ampliam as oportunidades oferecidas a crianças, adolescentes e famílias.
+
+## Doe para o SECRI
+
+Pix, transferência bancária, Nota Premiada Capixaba e doação de materiais, com recibo e prestação de contas, reunidos em uma página só.
+
+Quero doar →
 
 ## Seja voluntário
 

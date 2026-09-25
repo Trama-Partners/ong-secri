@@ -454,7 +454,7 @@ def gera(caminho_md: str) -> tuple[str, dict]:
         Projetos como este existem porque pessoas e empresas decidiram apoiá-los.
       </p>
       <div class="flex flex-col justify-center gap-3 sm:flex-row sm:gap-4">
-        <a href="../como-ajudar.html#doacao-financeira"
+        <a href="../doe.html"
            class="inline-flex items-center justify-center rounded-full bg-gold-500 px-7 py-3 text-sm
                   font-bold text-ink-900 transition-colors hover:bg-gold-300 focus-visible:outline
                   focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900

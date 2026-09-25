@@ -3,17 +3,22 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://secri.org.br/como-ajudar.html</loc>
-    <lastmod>2026-09-23</lastmod>
-    <priority>0.9</priority>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://secri.org.br/contato.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://secri.org.br/doe.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://secri.org.br/impacto.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://secri.org.br/assets/fotos/institucional/institucional-03-social.webp</image:loc>
@@ -22,7 +27,7 @@
   </url>
   <url>
     <loc>https://secri.org.br/</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://secri.org.br/assets/fotos/canoa-viva/canoa-02.webp</image:loc>
@@ -63,7 +68,7 @@
   </url>
   <url>
     <loc>https://secri.org.br/noticias.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://secri.org.br/assets/fotos/oficina-de-canto/canto-01.webp</image:loc>
@@ -84,12 +89,12 @@
   </url>
   <url>
     <loc>https://secri.org.br/politica-privacidade.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://secri.org.br/projetos.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://secri.org.br/assets/fotos/o-som-do-bem/o-som-do-bem-03.webp</image:loc>
@@ -126,7 +131,7 @@
   </url>
   <url>
     <loc>https://secri.org.br/projetos/canoa-viva.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://secri.org.br/assets/fotos/canoa-viva/canoa-02.webp</image:loc>
@@ -151,7 +156,7 @@
   </url>
   <url>
     <loc>https://secri.org.br/projetos/engajando-futuros.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://secri.org.br/assets/fotos/engajando-futuros/engajando-futuros-01-social.webp</image:loc>
@@ -164,7 +169,7 @@
   </url>
   <url>
     <loc>https://secri.org.br/projetos/inova-bem.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://secri.org.br/assets/fotos/inova-bem/inova-bem-turma-estudando-tablets.webp</image:loc>
@@ -181,7 +186,7 @@
   </url>
   <url>
     <loc>https://secri.org.br/projetos/judo.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://secri.org.br/assets/fotos/judo/judo-02.webp</image:loc>
@@ -194,7 +199,7 @@
   </url>
   <url>
     <loc>https://secri.org.br/projetos/movimento-com-qualidade-de-vida.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://secri.org.br/assets/fotos/movimento-com-qualidade-de-vida/mov-qualid-de-vida-01.webp</image:loc>
@@ -207,7 +212,7 @@
   </url>
   <url>
     <loc>https://secri.org.br/projetos/o-som-do-bem.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://secri.org.br/assets/fotos/oficina-de-canto/canto-01.webp</image:loc>
@@ -232,7 +237,7 @@
   </url>
   <url>
     <loc>https://secri.org.br/projetos/oficina-de-canto.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://secri.org.br/assets/fotos/oficina-de-canto/canto-01.webp</image:loc>
@@ -245,7 +250,7 @@
   </url>
   <url>
     <loc>https://secri.org.br/projetos/travessia.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://secri.org.br/assets/fotos/travessia/travessia-03.webp</image:loc>
@@ -262,7 +267,7 @@
   </url>
   <url>
     <loc>https://secri.org.br/quem-somos.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://secri.org.br/assets/fotos/institucional/institucional-02.webp</image:loc>
@@ -271,7 +276,7 @@
   </url>
   <url>
     <loc>https://secri.org.br/transparencia.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>

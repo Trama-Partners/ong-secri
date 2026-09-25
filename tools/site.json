@@ -114,12 +114,22 @@
     },
     "como-ajudar.html": {
       "nav": null,
-      "title": "Como Ajudar | Doe para o SECRI em Vitória ES",
-      "description": "Doe por Pix ou transferência, destine sua Nota Premiada Capixaba, seja voluntário ou torne sua empresa parceira do SECRI, em Vitória/ES.",
+      "title": "Como Ajudar | Voluntariado e parcerias no SECRI, Vitória ES",
+      "description": "Seja voluntário, torne sua empresa parceira ou doe para o SECRI, ONG que atende crianças, adolescentes e famílias do Território do Bem, em Vitória/ES.",
       "og_image_w": 1200,
       "og_image_h": 630,
       "schema": "WebPage",
       "breadcrumb": "Como Ajudar",
+      "og_image": "assets/og/og-canoa-02.jpg"
+    },
+    "doe.html": {
+      "nav": null,
+      "title": "Doe para o SECRI | Pix e doações em Vitória ES",
+      "description": "Doe por Pix (CNPJ 31.795.321/0001-53), transferência ou Nota Premiada Capixaba e mantenha gratuitos os projetos do SECRI no Território do Bem, Vitória/ES.",
+      "og_image_w": 1200,
+      "og_image_h": 630,
+      "schema": "WebPage",
+      "breadcrumb": "Doe",
       "og_image": "assets/og/og-canoa-02.jpg"
     },
     "politica-privacidade.html": {

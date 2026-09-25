@@ -22,7 +22,7 @@ FORA = {'404.html', 'pendencias.html', 'styleguide.html'}
 
 # quanto cada página pesa dentro do site, para o rastreador priorizar
 PRIORIDADE = {
-    'index.html': '1.0', 'projetos.html': '0.9', 'como-ajudar.html': '0.9',
+    'index.html': '1.0', 'projetos.html': '0.9', 'como-ajudar.html': '0.8', 'doe.html': '0.9',
     'quem-somos.html': '0.8', 'impacto.html': '0.8',
     'transparencia.html': '0.7', 'contato.html': '0.7',
     'noticias.html': '0.6', 'politica-privacidade.html': '0.3',

@@ -102,4 +102,35 @@
       confirm.focus();
     });
   });
+
+  // --- Botões "Copiar" (chave Pix) -------------------------------------
+  // navigator.clipboard pode faltar fora de contexto seguro; nesse caso o
+  // texto fica selecionado para o visitante copiar com Ctrl+C.
+  document.querySelectorAll('[data-copiar]').forEach(function (botao) {
+    var alvo = document.getElementById(botao.getAttribute('data-copiar'));
+    if (!alvo) return;
+    var rotulo = botao.textContent;
+
+    var avisa = function (texto) {
+      botao.textContent = texto;
+      setTimeout(function () { botao.textContent = rotulo; }, 2000);
+    };
+
+    botao.addEventListener('click', function () {
+      var texto = alvo.textContent.trim();
+      var seleciona = function () {
+        var faixa = document.createRange();
+        faixa.selectNodeContents(alvo);
+        var sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(faixa);
+        avisa('Selecionado');
+      };
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(texto).then(function () { avisa('Copiado!'); }, seleciona);
+      } else {
+        seleciona();
+      }
+    });
+  });
 })();

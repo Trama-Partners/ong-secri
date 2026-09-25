@@ -26,7 +26,7 @@ FORA = {'404.html', 'pendencias.html', 'styleguide.html'}
 GRUPOS = [
     ('Institucional', ['index.html', 'quem-somos.html', 'impacto.html', 'transparencia.html']),
     ('Projetos', ['projetos.html']),
-    ('Participação', ['como-ajudar.html', 'contato.html', 'noticias.html']),
+    ('Participação', ['doe.html', 'como-ajudar.html', 'contato.html', 'noticias.html']),
     ('Políticas', ['politica-privacidade.html']),
 ]
 

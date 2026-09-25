@@ -56,7 +56,7 @@ apple-touch-icon · `site.webmanifest` · `noindex` nas páginas internas.
 | contato | `ContactPage` + `NGO` com dois `ContactPoint` |
 | demais | `WebPage` + `BreadcrumbList` |
 
-**Arquivos na raiz:** `sitemap.xml` (17 URLs, 47 imagens, `lastmod` real dos
+**Arquivos na raiz:** `sitemap.xml` (18 URLs, 47 imagens, `lastmod` real dos
 arquivos), `robots.txt`, `site.webmanifest`, `404.html`.
 
 **Imagens:** todas com `alt` preenchido, `width`/`height` explícitos (evita
@@ -78,7 +78,7 @@ resumir errado.
 - `llms.txt` — índice: resumo da instituição, números de 2025, uma linha por
   página com descrição, dados de contato e um aviso de que a versão está em
   validação (para a IA não citar como fato o que está "a confirmar")
-- `llms-full.txt` — texto integral das 17 páginas em um arquivo, ~50 KB, com
+- `llms-full.txt` — texto integral das 18 páginas em um arquivo, ~50 KB, com
   comentário `<!-- fonte: URL -->` antes de cada uma para a IA saber citar
 
 **Política de crawlers no `robots.txt`**, definida em `tools/gerar_seo.py`:
@@ -122,7 +122,7 @@ civil filantrópica". Comece com o que a pessoa foi procurar.
 tools/
 ├── site.json            fonte única: nav, telefones, meta de cada página
 ├── partials/            head.html · header.html · footer.html
-├── sync_chrome.py       escreve o chrome nas 19 páginas
+├── sync_chrome.py       escreve o chrome nas 20 páginas
 ├── gerar_projetos.py    gera projetos/*.html e projetos.html dos markdowns
 ├── gerar_seo.py         gera sitemap.xml e robots.txt
 ├── gerar_llms.py        gera llms.txt e llms-full.txt
@@ -130,7 +130,7 @@ tools/
 └── md.py                conversor Markdown→HTML mínimo
 ```
 
-**Nunca edite header, footer ou `<head>` direto no HTML** — estão copiados em 19
+**Nunca edite header, footer ou `<head>` direto no HTML** — estão copiados em 20
 arquivos e o `sync_chrome.py` sobrescreve. Includes por JavaScript não são
 opção: `fetch()` é bloqueado em `file://` e o site abriria sem chrome.
 
