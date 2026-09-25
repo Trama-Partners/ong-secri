@@ -90,7 +90,7 @@
   }
 
   // --- Formulários (confirmação local, sem backend) --------------------
-  [['volForm', 'volConfirm'], ['contactForm', 'contactConfirm']].forEach(function (pair) {
+  [['volForm', 'volConfirm']].forEach(function (pair) {
     var form = document.getElementById(pair[0]);
     var confirm = document.getElementById(pair[1]);
     if (!form || !confirm) return;
@@ -102,6 +102,78 @@
       confirm.focus();
     });
   });
+
+  // --- WhatsApp: links e formulário de contato ------------------------
+  // Celular abre o app pelo api.whatsapp.com; PC vai para o WhatsApp Web.
+  // Basta um sinal de celular: userAgentData não existe em Safari/Firefox e
+  // pode divergir do user agent quando este é alterado.
+  var ehCelular = function () {
+    if (navigator.userAgentData && navigator.userAgentData.mobile === true) {
+      return true;
+    }
+    var ua = navigator.userAgent || '';
+    if (/Android|iPhone|iPad|iPod|Mobile|Windows Phone|webOS|BlackBerry|Opera Mini|IEMobile/i.test(ua)) {
+      return true;
+    }
+    // iPadOS se apresenta como Mac; a tela sensível ao toque denuncia.
+    return navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
+  };
+
+  var urlWhatsApp = function (telefone, texto) {
+    var base = ehCelular()
+      ? 'https://api.whatsapp.com/send/'
+      : 'https://web.whatsapp.com/send/';
+    return base + '?phone=' + telefone + (texto ? '&text=' + encodeURIComponent(texto) : '');
+  };
+
+  // Links <a data-whatsapp="55..."> recebem a URL do dispositivo. Sem JS, o
+  // href do HTML (api.whatsapp.com) continua funcionando nos dois.
+  document.querySelectorAll('a[data-whatsapp]').forEach(function (link) {
+    link.href = urlWhatsApp(link.getAttribute('data-whatsapp'));
+  });
+
+  // Formulário de contato: sem backend, a mensagem é montada aqui e aberta no
+  // WhatsApp do SECRI, onde o visitante confirma o envio. O número vem do
+  // data-whatsapp do <form>.
+  var contactForm = document.getElementById('contactForm');
+
+  if (contactForm) {
+    var contactConfirm = document.getElementById('contactConfirm');
+    var contactLink = document.getElementById('contactWhatsLink');
+    var telefone = contactForm.getAttribute('data-whatsapp');
+
+    var campo = function (nome) {
+      return (contactForm.elements[nome].value || '').trim();
+    };
+
+    // Formatação do WhatsApp: *negrito*, _itálico_.
+    var montaMensagem = function () {
+      return [
+        '*Contato pelo site do SECRI*',
+        '',
+        '*Nome:* ' + campo('nome'),
+        '*E-mail:* ' + campo('email'),
+        '*Assunto:* ' + campo('assunto'),
+        '',
+        '*Mensagem:*',
+        campo('mensagem'),
+        '',
+        '_Enviado pelo formulário de secri.org.br/contato_',
+      ].join('\n');
+    };
+
+    // O navegador valida os campos obrigatórios antes de disparar o submit.
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var url = urlWhatsApp(telefone, montaMensagem());
+      window.open(url, '_blank', 'noopener');
+      if (contactLink) contactLink.href = url;
+      if (contactConfirm) {
+        contactConfirm.classList.remove('hidden');
+        contactConfirm.focus();
+      }
+    });
+  }
 
   // --- Botões "Copiar" (chave Pix) -------------------------------------
   // navigator.clipboard pode faltar fora de contexto seguro; nesse caso o

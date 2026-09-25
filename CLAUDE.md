@@ -165,8 +165,10 @@ Antes da publicação pública, nenhuma pode sobrar:
 1. **Tailwind via Play CDN** compila no navegador e não é para produção. Gerar
    CSS compilado antes de publicar.
 2. **Autorização de uso de imagem** das crianças nas fotos.
-3. **Formulário de contato não envia nada** — há aviso visível na página. O de
-   voluntariado aponta para o Google Form real e funciona.
+3. ~~Formulário de contato não envia nada~~ — resolvido: abre o WhatsApp
+   (27) 99849-9507 com a mensagem pronta, WhatsApp Web no PC e
+   `api.whatsapp.com` no celular (`assets/site.js`). Sem backend; o número é o
+   `data-whatsapp` do `<form>` em `contato.html`.
 4. **Depoimentos são ilustrativos.** As pessoas citadas não existem.
 5. **Estatuto e atas** são digitalizações sem camada de texto; leitor de tela
    não lê. OCR resolveria.

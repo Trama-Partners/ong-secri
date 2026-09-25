@@ -88,7 +88,7 @@ Todos os degraus `700` passam em contraste AA sobre branco. Ao criar uma cor nov
 
 1. **Tailwind via Play CDN.** Compila no navegador, avisa no console e não é para produção. Antes de ir ao ar, gerar um CSS compilado.
 2. **Autorização de imagem** das crianças nas fotos — pendente, e é bloqueante.
-3. **Formulário de contato não envia nada.** Há um aviso visível na página. O de voluntariado aponta para o Google Form real e funciona.
+3. ~~Formulário de contato não envia nada.~~ Resolvido: abre o WhatsApp (27) 99849-9507 com a mensagem pronta (Web no PC, app no celular). O de voluntariado aponta para o Google Form real e funciona.
 4. **PDFs comprimidos** de 71 MB para 25 MB. Os originais estão em `../informacoes/transparencia/`. Quando forem para um bucket, basta trocar o caminho `assets/documentos/`.
 5. **Estatuto e atas não têm camada de texto** — são digitalizações. Leitor de tela não lê. OCR resolveria.
 6. **Depoimentos são ilustrativos.** As pessoas citadas não existem; há selo avisando. Substituir por falas reais antes da publicação.

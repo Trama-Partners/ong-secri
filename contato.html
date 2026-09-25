@@ -146,7 +146,7 @@
           </div>
           <div>
             <dt class="font-display text-xs font-bold uppercase tracking-wide text-ink-600">WhatsApp e telefone</dt>
-            <dd class="mt-1"><a href="https://wa.me/5527998499507" target="_blank" rel="noopener" class="font-semibold text-sky-700 underline underline-offset-2 hover:text-rose-700">(27) 99849-9507</a></dd>
+            <dd class="mt-1"><a href="https://api.whatsapp.com/send/?phone=5527998499507" data-whatsapp="5527998499507" target="_blank" rel="noopener" class="font-semibold text-sky-700 underline underline-offset-2 hover:text-rose-700">(27) 99849-9507</a></dd>
           </div>
           <div>
             <dt class="font-display text-xs font-bold uppercase tracking-wide text-ink-600">Telefone fixo</dt>
@@ -185,11 +185,9 @@
       <section>
         <h2 class="mb-6 font-display text-2xl font-extrabold tracking-tight text-ink-900 sm:text-3xl">Envie uma mensagem</h2>
 
-        <div role="note" class="mb-6 rounded-2xl border border-gold-300 bg-gold-50 p-5">
-          <p class="text-sm leading-relaxed text-ink-800"><strong class="font-bold">Formulário em validação.</strong> Ele ainda não envia a mensagem para ninguém, porque o destino ainda está sendo definido. Até lá, use o WhatsApp ou o e-mail ao lado, que são canais ativos.</p>
-        </div>
+        <p class="mb-6 leading-relaxed text-ink-800">Preencha os campos e toque em enviar. O WhatsApp abre em uma nova aba com a mensagem pronta para o SECRI, no número (27) 99849-9507; é só confirmar o envio por lá.</p>
 
-        <form id="contactForm" class="space-y-4" novalidate>
+        <form id="contactForm" class="space-y-4" data-whatsapp="5527998499507">
           <div>
             <label for="nome" class="mb-1.5 block text-sm font-semibold text-ink-900">Nome</label>
             <input id="nome" name="nome" type="text" autocomplete="name" required class="w-full rounded-xl border border-ink-300 px-4 py-3 text-ink-900 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-300">
@@ -213,11 +211,11 @@
             <label for="mensagem" class="mb-1.5 block text-sm font-semibold text-ink-900">Mensagem</label>
             <textarea id="mensagem" name="mensagem" rows="5" required class="w-full rounded-xl border border-ink-300 px-4 py-3 text-ink-900 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-300"></textarea>
           </div>
-          <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-gold-500 px-7 py-3 text-sm font-bold text-ink-900 transition-colors hover:bg-gold-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900 sm:w-auto sm:text-base">Enviar mensagem</button>
+          <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-gold-500 px-7 py-3 text-sm font-bold text-ink-900 transition-colors hover:bg-gold-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink-900 sm:w-auto sm:text-base">Enviar pelo WhatsApp</button>
         </form>
-        <div id="contactConfirm" class="hidden rounded-2xl bg-verde-50 p-6 ring-1 ring-verde-300">
-          <p class="font-display font-bold text-ink-900">Mensagem registrada nesta demonstração.</p>
-          <p class="mt-2 text-sm leading-relaxed text-ink-800">Este formulário ainda não tem destino configurado, então nada foi enviado. Para falar com o SECRI agora, use o WhatsApp (27) 99849-9507 ou contato@secri.org.br.</p>
+        <div id="contactConfirm" class="mt-6 hidden rounded-2xl bg-verde-50 p-6 ring-1 ring-verde-300" tabindex="-1" role="status">
+          <p class="font-display font-bold text-ink-900">Mensagem pronta no WhatsApp.</p>
+          <p class="mt-2 text-sm leading-relaxed text-ink-800">Confira o texto na nova aba e toque em enviar. Se o WhatsApp não abriu, <a id="contactWhatsLink" href="https://api.whatsapp.com/send/?phone=5527998499507" target="_blank" rel="noopener" class="font-semibold text-sky-700 underline underline-offset-2 hover:text-rose-700">abra por aqui</a>.</p>
         </div>
       </section>
     </div>

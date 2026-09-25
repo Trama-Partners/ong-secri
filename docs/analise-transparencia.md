@@ -147,7 +147,7 @@ fixo, e-mail geral, e-mail financeiro e Instagram.
 
 **Pendências antes da publicação:**
 
-- Formulário não envia nada (há aviso visível)
+- ~~Formulário não envia nada (há aviso visível)~~ (resolvido em 25/09/2026: abre o WhatsApp)
 - Horário de atendimento "a confirmar"
 - ~~Mapa é um marcador de posição, sem o Google Maps~~ (resolvido em 25/09/2026)
 - ~~Link do YouTube "a confirmar"~~ (resolvido em 25/09/2026)
@@ -181,7 +181,7 @@ sair.
 | 3 | ✅ Âncora e link direto para a Missão — **feito** | 3 | Só desenvolvimento |
 | 4 | ✅ Página de doação própria (`doe.html`), QR Code, recibo, destino do recurso — **feito**, com dados "a confirmar" | 2 | Desenvolvimento + dados da organização |
 | 5 | Seção separada para demonstrações contábeis em Transparência | 8 | Só desenvolvimento |
-| 6 | Formulário e horário no Contato (mapa e YouTube **feitos**) | 9 | Organização: destino do formulário, horário |
+| 6 | Horário no Contato (formulário, mapa e YouTube **feitos**) | 9 | Organização: horário de atendimento |
 | 7 | ✅ Resolver selo CEBAS — **feito**; falta confirmar o pedido de renovação | — | Organização |
 | 8 | OCR em estatuto e atas | 5, 6 | Só desenvolvimento |
 | 9 | Trocar ou remover depoimentos fictícios | — | Organização |
@@ -211,3 +211,8 @@ sair.
   Maps"; canal do YouTube linkado no Contato e no rodapé. JSON-LD `NGO` (index
   e contato) com `geo`, `hasMap` e YouTube em `sameAs`. Faltam horário de
   atendimento e destino do formulário.
+- **Formulário de contato (25/09/2026):** envia pelo WhatsApp (27) 99849-9507.
+  Mensagem formatada com negrito do WhatsApp e codificada com
+  `encodeURIComponent`; abre `web.whatsapp.com` no PC e `api.whatsapp.com` no
+  celular. Política de privacidade atualizada. Falta só o horário de
+  atendimento.
