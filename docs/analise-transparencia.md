@@ -59,8 +59,9 @@ configurados.
   do tipo "R$ 50 = um mês de material de oficina".
 - **Recibo/comprovante.** Não explica como o doador pede recibo.
 - **QR Code do Pix** e botão de copiar a chave.
-- **Benefício fiscal.** Não informa se a doação é dedutível, o que depende do
-  CEBAS, hoje marcado "a confirmar".
+- **Benefício fiscal.** Não informa se a doação é dedutível. O CEBAS (válido
+  até 31/12/2026) isenta a entidade de contribuições sociais, mas não torna a
+  doação dedutível para o doador automaticamente; confirmar com o contador.
 
 ### 3. Missão da organização — ✅ Atende, sem link direto
 
@@ -158,9 +159,11 @@ sair.
 
 ## Outros pontos de atenção
 
-- **Selo "CEBAS a confirmar"** em Transparência e Quem Somos. Se a entidade
-  não tem CEBAS, remover o selo é melhor que deixá-lo pendente, porque passa
-  impressão de irregularidade.
+- ~~**Selo "CEBAS a confirmar"** em Transparência e Quem Somos.~~ Resolvido em
+  25/09/2026: renovação pela Portaria SNAS/MDS nº 152/2024 (DOU nº 218,
+  11/11/2024), válida de 01/01/2024 a 31/12/2026. **Atenção:** o pedido de
+  renovação deve ser feito nos 360 dias anteriores ao vencimento (janela
+  aberta desde 05/01/2026). Confirmar se já foi protocolado.
 - **Documentos sem texto.** Estatuto e ata de eleição são imagens pesadas
   (8,5 MB e 4,6 MB). OCR os tornaria pesquisáveis e acessíveis.
 - **Depoimentos fictícios.** As pessoas citadas não existem. Numa avaliação de
@@ -179,7 +182,7 @@ sair.
 | 4 | ✅ Página de doação própria (`doe.html`), QR Code, recibo, destino do recurso — **feito**, com dados "a confirmar" | 2 | Desenvolvimento + dados da organização |
 | 5 | Seção separada para demonstrações contábeis em Transparência | 8 | Só desenvolvimento |
 | 6 | Formulário, horário, mapa e YouTube no Contato | 9 | Organização: destino do formulário, horário, links |
-| 7 | Resolver selo CEBAS | — | Organização |
+| 7 | ✅ Resolver selo CEBAS — **feito**; falta confirmar o pedido de renovação | — | Organização |
 | 8 | OCR em estatuto e atas | 5, 6 | Só desenvolvimento |
 | 9 | Trocar ou remover depoimentos fictícios | — | Organização |
 
@@ -199,4 +202,8 @@ sair.
   Diretoria Executiva (4 cargos) e Conselho Fiscal (3 membros), gestão
   2026-2028, link para a ata. Link "Diretoria e Conselho" no rodapé e chamada
   em Transparência.
-- **CEBAS:** mantido como está, aguardando confirmação.
+- **CEBAS (25/09/2026):** documento publicado em Transparência
+  (`cebas-portaria-152-2024.pdf`, PDF original, sem recompressão para manter a
+  assinatura digital da Imprensa Nacional). Selo "a confirmar" trocado por
+  "Válido até 31/12/2026" em Transparência e Quem Somos. Processo
+  235874.0607122/2023.
